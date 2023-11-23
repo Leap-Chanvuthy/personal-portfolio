@@ -1,6 +1,7 @@
 import { IoLogoLinkedin } from "react-icons/io5";
 import { IoLogoGithub } from "react-icons/io5";
 import { FaTelegram } from "react-icons/fa";
+import Projects from "../components/Projects";
 import Footer from "../components/layouts/Footer";
 
 
@@ -17,16 +18,18 @@ academic journey, I have developed a strong foundation in software
 engineering principles and practices. My coursework has equipped me with a
 solid understanding of Web Development !</p>
                     <h5 className="text-center pt-4 pb-2 font-bold">Follow me </h5>
-                    <div className="flex justify-center items-center text-lg gap-4">
+                    <div className="flex justify-center items-center text-4xl gap-4">
                         <IoLogoLinkedin/>
                         <IoLogoGithub/>
                         <FaTelegram/>
                     </div>
                 </div>
                 <div>
-                    <img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-1229892983-square.jpg" className="w-[200px] h-[200px] rounded-full" />
+                    <img src="../../public/images/leapchanvuthy.jpg" className="w-[250px] h-[250px] rounded-full border-2 border-green-600" />
                 </div>
             </div>
+            <h4 className="ps-10 font-bold text-xl text-green-600">My Portfolio</h4>
+            <Projects/>
             <Footer/>
         </div>
      );
