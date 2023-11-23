@@ -1,13 +1,27 @@
-import {React} from 'react'
+import {React} from 'react';
+import {BrowserRouter , Routes , Route} from 'react-router-dom';
 import Navbar from './components/layouts/Navbar';
+import Home  from './pages/Home';
+import About from './pages/About';
+import Articles from './pages/Articles';
+import Project from './pages/Project';
+import Contact from './pages/Contact';
 
 function App() {
 
   return (
-    <div>
-      <Navbar/>
-      <h4 className='text-3xl text-red-500'>Hello vuthy</h4>
-    </div>
+    <BrowserRouter>
+        <div>
+          <Navbar/>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/articles" element={<Articles />} />
+              <Route path="/project" element={<Project />} />
+              <Route path='/contact' element={<Contact />}/>
+            </Routes>
+        </div>
+    </BrowserRouter>
   )
 }
 

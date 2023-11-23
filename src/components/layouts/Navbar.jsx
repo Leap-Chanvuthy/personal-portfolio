@@ -1,14 +1,16 @@
+import {Link} from 'react-router-dom';
+
 const Navbar = () => {
     return ( 
-
-            <ul className="flex justify-center items-center gap-6 w-[full] h-[3rem] font-medium">
-                <li>Home</li>
-                <li>About</li>
-                <li>Articles</li>
-                <li>Contact</li>
-                <li>Blog</li>
-            </ul>
-
+            <nav>
+                <ul className="flex justify-center items-center gap-6 w-[full] h-[3rem] font-medium">
+                    <Link to="/"><li>Home</li></Link>
+                    <Link to="/about"><li>About</li></Link>
+                    <Link to="/articles"><li>Articles</li></Link>
+                    <Link to="/contact"><li>Contact</li></Link>
+                    <Link to="/blog"><li>Blog</li></Link>
+                </ul>
+            </nav>
      );
 }
  
