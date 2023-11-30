@@ -14,10 +14,10 @@ const Footer = () => {
                     <Link to="/blog"><li>Blog</li></Link>
                 </div>
                 <div>
-                    <div className="flex justify-center items-center text-lg gap-4">
-                        <IoLogoLinkedin/>
-                        <IoLogoGithub/>
-                        <FaTelegram/>
+                    <div className="flex justify-center items-center text-xl gap-4">
+                        <a href="https://www.linkedin.com/in/leap-chanvuthy-9402b8282/"><IoLogoLinkedin/></a>
+                        <a href="https://github.com/Leap-Chanvuthy"><IoLogoGithub/></a>
+                        <a href="https://t.me/Elon_Thy"><FaTelegram/></a>
                     </div>
                 </div>
             </ul>

@@ -16,19 +16,19 @@ const Home = () => {
 engineering at Cambodia Academy of Digital Technology. Throughout my
 academic journey, I have developed a strong foundation in software
 engineering principles and practices. My coursework has equipped me with a
-solid understanding of Web Development !</p>
+solid understanding of Software Development !</p>
                     <h5 className="text-center pt-4 pb-2 font-bold">Follow me </h5>
                     <div className="flex justify-center items-center text-4xl gap-4">
-                        <IoLogoLinkedin/>
-                        <IoLogoGithub/>
-                        <FaTelegram/>
+                        <a href="https://www.linkedin.com/in/leap-chanvuthy-9402b8282/"><IoLogoLinkedin/></a>
+                        <a href="https://github.com/Leap-Chanvuthy"><IoLogoGithub/></a>
+                        <a href="https://t.me/Elon_Thy"><FaTelegram/></a>
                     </div>
                 </div>
                 <div>
-                    <img src="../../public/images/leapchanvuthy.jpg" className="w-[250px] h-[250px] rounded-full border-2 border-green-600" />
+                    <img src="../images/Leapchanvuthy.png" className="w-[250px] h-[250px] rounded-full border-2 border-green-600" />
                 </div>
             </div>
-            <h4 className="ps-10 font-bold text-xl text-green-600">My Portfolio</h4>
+            <a href="https://drive.google.com/file/d/1rQQrqowTdfKBRkeJ6RixEhuHVZ8EoSsz/view?usp=drive_link" className="bg-black p-2 text-gray-200 font-semibold rounded-sm ml-10">Download CV</a>
             <Projects/>
             <Footer/>
         </div>
