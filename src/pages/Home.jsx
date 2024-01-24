@@ -12,7 +12,12 @@ const Home = () => {
             <div className="lg:h-[21rem] md:h-[25rem] grid lg:grid-cols-2 md:sm:grid-cols-1 justify-items-center items-center my-10 px-10 py-5 gap-5">
                 <div>
                     <h1 className="capitalize text-2xl font-bold">Hello 👋 I'm Leap Chanvuthy. I'm a FullStack developer based in phnom penh !</h1>
-                    <p className="text font-thin">I am currently a third-year Computer Science student specializing in software
+                    <p className="text font-thin">I am
+                    
+                    
+                    
+                    
+                     currently a third-year Computer Science student specializing in software
 engineering at Cambodia Academy of Digital Technology. Throughout my
 academic journey, I have developed a strong foundation in software
 engineering principles and practices. My coursework has equipped me with a
