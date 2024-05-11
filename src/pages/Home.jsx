@@ -45,7 +45,7 @@ const Home = () => {
                 className="w-[250px] h-[250px] rounded-full border-2 border-green-600"
                 />
                 <a
-                href="https://drive.google.com/file/d/1rQQrqowTdfKBRkeJ6RixEhuHVZ8EoSsz/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1tO3tCG1kmN3GnMP0Fufv9JqnPHyxI3Gp/view?usp=sharing"
                 className="bg-black p-2 text-gray-200 font-semibold rounded-sm "
                 >
                 Download CV

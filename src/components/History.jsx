@@ -24,7 +24,7 @@ const History = () => {
                         <Timeline.Content >
                             <Timeline.Time>{e.date}</Timeline.Time>
                             <Timeline.Title>{e.title}</Timeline.Title>
-                            <Timeline.Body>
+                            <Timeline.Body className="text-justify">
                                 {e.body}
                             </Timeline.Body>
                             <Button outline className="bg-black">
