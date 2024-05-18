@@ -58,6 +58,10 @@ const Skills = () => {
                             <img className="w-[30px] " src="https://www.gstatic.com/devrel-devsite/prod/v8710cb4731a368cb758d972abd8e9129d9a2b5cf087d107be78174bbc0c595e6/firebase/images/touchicon-180.png"/>
                             <p className="text-lg">Firebase</p>
                         </li>
+                        <li className="flex justify-center items-center gap-5 border-2 border-yel p-2 rounded-sm">
+                            <img className="w-[90px]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png"/>
+                            <p className="text-lg">MongoDB</p>
+                        </li>
                     </ul>
                 </div>
 
