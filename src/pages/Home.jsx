@@ -4,6 +4,8 @@ import { FaTelegram } from "react-icons/fa";
 import Projects from "../components/Projects";
 import Footer from "../components/layouts/Footer";
 import Skills from "../components/Skills";
+import { Button } from "flowbite-react";
+import GitHubRepos from "../components/Project/GithubRepos";
 
 
 
@@ -17,7 +19,7 @@ const Home = () => {
                 phnom penh !
                 </h1>
                 <p className="text font-thin text-justify mt-5">
-                I am currently a third-year Computer Science student specializing
+                I am currently a fourth-year Computer Science student specializing
                 in software engineering at Cambodia Academy of Digital Technology.
                 Throughout my academic journey, I have developed a strong
                 foundation in software engineering principles and practices. My
@@ -53,6 +55,7 @@ const Home = () => {
             </div>
 
         </div>
+        <GitHubRepos />
 
         <Skills/>
 

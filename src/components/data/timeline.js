@@ -27,5 +27,12 @@ export const timeline = [
         body : 'During my 3 months internship, as a web developer in Siem Reap, I contributed to the Innovation for Development (I4D) project, overseen by GIZ Cambodia.The project objective was to assist SMEs in digitalizing their operations. Successfully completing this internship has enriched my skills and knowledge in web development, particularly in the context of fostering technological advancements for business growth.',
         link : 'https://example.com'
     },
+    {
+        id : 4,
+        date : 'April 2024 -> Now',
+        title : 'Freelance Developer',
+        body : 'During my 3 months internship, as a web developer in Siem Reap, I contributed to the Innovation for Development (I4D) project, overseen by GIZ Cambodia.The project objective was to assist SMEs in digitalizing their operations. Successfully completing this internship has enriched my skills and knowledge in web development, particularly in the context of fostering technological advancements for business growth.',
+        link : 'https://example.com'
+    },
 ]
 

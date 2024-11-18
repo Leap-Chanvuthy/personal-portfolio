@@ -1,3 +1,4 @@
+import GitHubRepos from '../components/Project/GithubRepos';
 import Projects from '../components/Projects';
 import Footer from '../components/layouts/Footer';
 
@@ -14,7 +15,7 @@ const Project = () => {
                     <img src="../images/Leapchanvuthy2.png" className="w-[250px] h-[250px] rounded-full border-2 border-green-600" />
                 </div>
             </div>
-            <Projects/>
+            <GitHubRepos />
             <Footer/>
         </div>
      );

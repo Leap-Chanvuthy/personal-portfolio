@@ -1,11 +1,11 @@
 const Skills = () => {
 
     return ( 
-        <div className="mx-10 my-5 ">
+        <div className="mx-10 my-5">
             <h1 className="text-center font-bold text-2xl">Skills & Technologies</h1>
             <div className="mt-5 grid  grid-cols-1 lg:md:grid-cols-2 gap-4">
                 {/* Frontend Skill */}
-                <div className="  border-2 border-black rounded-md p-4">
+                <div className="  border-2 border-black dark:border-gray-400 rounded-md p-4">
                     <h3 className="text-xl font-medium text-center">Frontend</h3>
                     <ul className="mt-5 grid grid-cols-1 lg:md:grid-cols-2 gap-3">
                         <li className="flex justify-center items-center gap-5 border-2 border-yel p-2 rounded-sm">
@@ -28,7 +28,7 @@ const Skills = () => {
                 </div>
 
                 {/* Backend Skill */}
-                <div className="border-2 border-black rounded-md p-4">
+                <div className="border-2 border-black dark:border-gray-400 rounded-md p-4">
                     <h3 className="text-xl font-medium text-center">Backend APIs</h3>
                     <ul className="mt-5 grid grid-cols-1 lg:md:grid-cols-2 gap-3">
                         <li className="flex justify-center items-center gap-5 border-2 border-yel p-2 rounded-sm">
@@ -47,7 +47,7 @@ const Skills = () => {
                 </div>
 
                 {/* Database */}
-                <div className=" border-2 border-black rounded-md p-4">
+                <div className=" border-2 border-black dark:border-gray-400 rounded-md p-4">
                     <h3 className="text-xl font-medium text-center">Database</h3>
                     <ul className="mt-5 grid grid-cols-1 lg:md:grid-cols-2 gap-3">
                         <li className="flex justify-center items-center gap-5 border-2 border-yel p-2 rounded-sm">
@@ -66,7 +66,7 @@ const Skills = () => {
                 </div>
 
                 {/* Mobile */}
-                <div className=" border-2 border-black rounded-md p-4">
+                {/* <div className=" border-2 border-black rounded-md p-4">
                     <h3 className="text-xl font-medium text-center">Mobile Development</h3>
                     <ul className="mt-5 grid grid-cols-1 lg:md:grid-cols-2 gap-3">
                         <li className="flex justify-center items-center gap-5 border-2 border-yel p-2 rounded-sm">
@@ -78,7 +78,7 @@ const Skills = () => {
                             <p className="text-lg">Dart</p>
                         </li>
                     </ul>
-                </div>
+                </div> */}
 
             </div>
         </div>

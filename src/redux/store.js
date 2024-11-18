@@ -1,12 +1,23 @@
-// store.js
+import { persistStore, persistReducer } from 'redux-persist';
 import { configureStore } from '@reduxjs/toolkit';
-import counterSlice from './counter/counterSlice';
+import storage from 'redux-persist/lib/storage'; 
+import { combineReducers } from 'redux';
+
+import themeReducer from './slices/themeSlice';
 
 
-const store = configureStore({
-  reducer: {
-    counter : counterSlice
-  },
+const persistConfig = {
+  key: 'root',
+  storage,
+  whitelist: ['auth' , 'theme'],
+};
+
+const rootReducer = combineReducers({
+    theme : themeReducer,
 });
 
-export default store;
+const persistedReducer = persistReducer(persistConfig, rootReducer);
+
+export const store = configureStore({ reducer: persistedReducer }); 
+
+export const persistor = persistStore(store);
