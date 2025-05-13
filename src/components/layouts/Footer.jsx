@@ -1,28 +1,34 @@
-import {Link} from 'react-router-dom'
-import { IoLogoLinkedin } from "react-icons/io5";
-import { IoLogoGithub } from "react-icons/io5";
+import { Link } from 'react-router-dom'
+import { FaFacebook } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+
+
 
 const Footer = () => {
-    return ( 
-        <footer>
-            <hr />
-            <ul className="flex justify-between p-10 items-center gap-2 font-thin">
-                <div className='grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols1 items-center gap-6'>
-                    <Link to="/articles"><li>Articles</li></Link>
-                    <Link to="/contact"><li>Contact</li></Link>
-                    <Link to="/blog"><li>Blog</li></Link>
-                </div>
-                <div>
-                    <div className="flex justify-center items-center text-xl gap-4">
-                        <a href="https://www.linkedin.com/in/leap-chanvuthy-9402b8282/"><IoLogoLinkedin/></a>
-                        <a href="https://github.com/Leap-Chanvuthy"><IoLogoGithub/></a>
-                        <a href="https://t.me/Elon_Thy"><FaTelegram/></a>
-                    </div>
-                </div>
-            </ul>
+    return (
+        <footer className='flex flex-col justify-center items-center gap-5 my-10'>
+            <div className="flex justify-center items-center gap-4">
+                <Link to="https://www.facebook.com/leapchanvuthy" target="_blank">
+                    <FaFacebook className="text-2xl" />
+                </Link>
+                <Link to="https://t.me/Leapchanvuthy" target="_blank">
+                    <FaTelegram className="text-2xl" />
+                </Link>
+                <Link to="https://t.me/Leapchanvuthy" target="_blank">
+                    <FaGithub className="text-2xl" />
+                </Link>
+                <Link to="https://t.me/Leapchanvuthy" target="_blank">
+                    <FaLinkedin className="text-2xl" />
+                </Link>
+            </div>
+            <div className='flex flex-col justify-center items-center gap-2'>
+                <span>Leap Chanvuthy</span>
+                <p>Copyright ©2020 All rights reserved </p>
+            </div>
         </footer>
-     );
+    );
 }
- 
+
 export default Footer;
