@@ -17,12 +17,15 @@ const NavBar = () => {
             <div className='mx-10  sticky top-0 z-0'>
                 <Navbar fluid rounded>
                     <Navbar.Brand as={Link} href="/">
-                    <img src="images/Leapchanvuthy.png" className="mr-3 h-10" alt="Flowbite React Logo" />
+                    <img src="images/Leapchanvuthy.png" className="mr-3 h-10 rounded-md" alt="Flowbite React Logo" />
                     </Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse>
                         <Navbar.Link active={path == '/'}>
                             <Link to='/'>Home</Link>
+                        </Navbar.Link>
+                        <Navbar.Link active={path == '/components'}>
+                            <Link to='/components'>Component</Link>
                         </Navbar.Link>
                         <Navbar.Link active={path == '/about'}>
                             <Link to='/about'>About</Link>
