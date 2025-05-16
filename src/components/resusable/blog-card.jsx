@@ -1,0 +1,27 @@
+
+
+const BlogCard = ({image , title , publisedDate , category , body }) =>{
+
+    const truncateText = (text, maxLength) => {
+        if (text.length > maxLength) {
+            return text.slice(0, maxLength) + '...';
+        }
+        return text;
+    };
+
+    return (
+        <div className="flex flex-col lg:md:flex-row gap-5 items-start">
+            <img src={image} alt="work" className="w-56 h-40 object-cover rounded-lg" />
+            <div className="flex flex-col gap-2 mt-3">
+                <h2 className="font-bold">{title || "Leap Chanvuthy, Life as a coder" }</h2>
+                <div className="flex items-center flex-wrap gap-2">
+                    <span className="text-sm text-gray-500">{publisedDate || "12 January 2023"}</span> | {category || "Category"}
+                </div>
+                <p className='text-sm'>
+                    {truncateText(body || 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat id ligula efficitur facilisis. Donec euismod, nisi vel consectetur interdum, nisl nisi cursus nunc, eget tincidunt nunc nisl eget nunc.', 200)}
+                </p>
+            </div>
+        </div>
+    )
+}
+export default BlogCard;
