@@ -6,8 +6,6 @@ const Home = () =>{
         <div>
             <Metatag title="Home | Leap Chanvuthy" description="" />
             <Hero />
-            <h1>Home</h1>
-            <p>This is the Home page.</p>
         </div>
     )
 }

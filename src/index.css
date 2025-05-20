@@ -5,10 +5,9 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-/* html {
-    background-color: black;
-    color:white;
-} */
+html {
+    font-family: 'Kantumruy Pro', sans-serif;
+}
 
 .kh-font {
     font-family: 'Kantumruy Pro', sans-serif;

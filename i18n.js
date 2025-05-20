@@ -4,10 +4,12 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 
 // English translations
 import enNavbar from "./src/locales/en/navbar.json"
+import enHome from "./src/locales/en/home.json"
 
 
 // Khmer translations
 import kmNavbar from "./src/locales/km/navbar.json"
+import kmHome from "./src/locales/km/home.json"
 
 
 
@@ -18,14 +20,17 @@ i18n
     resources: {
       en: {
         navbar: enNavbar,
+        home : enHome,
       },
       km: {
         navbar: kmNavbar,
+        home : kmHome
       },
     },
     fallbackLng: 'en',
     ns: [
       'navbar',
+      'home'
     ],
     defaultNS: 'common',
     interpolation: {
