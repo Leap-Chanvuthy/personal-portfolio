@@ -1,0 +1,27 @@
+{
+    "home": {
+      "title": "Home | Leap Chanvuthy",
+      "description": "Explore Leap Chanvuthy's portfolio and discover a wide range of creative projects in web development and design."
+    },
+    "project": {
+      "title": "Projects | Leap Chanvuthy",
+      "description": "Browse through Leap Chanvuthy's featured web development and design projects, showcasing innovation and quality."
+    },
+    "blog": {
+      "title": "Blogs | Leap Chanvuthy",
+      "description": "Read insightful blog posts on web development, design trends, coding tips, and industry updates by Leap Chanvuthy."
+    },
+    "contact": {
+      "title": "Contact | Leap Chanvuthy",
+      "description": "Get in touch with Leap Chanvuthy for project inquiries, collaborations, or any questions about web development services."
+    },
+    "about": {
+      "title": "About Me | Leap Chanvuthy",
+      "description": "Learn more about Leap Chanvuthy's journey, skills, and passion for building user-friendly and scalable web applications."
+    },
+    "service": {
+      "title": "Services | Leap Chanvuthy",
+      "description": "Discover the professional web development and design services offered by Leap Chanvuthy to bring your ideas to life."
+    }
+  }
+  

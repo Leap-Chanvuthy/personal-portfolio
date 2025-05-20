@@ -5,11 +5,13 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 // English translations
 import enNavbar from "./src/locales/en/navbar.json"
 import enHome from "./src/locales/en/home.json"
+import enMeta from "./src/locales/en/meta-tag.json"
 
 
 // Khmer translations
 import kmNavbar from "./src/locales/km/navbar.json"
 import kmHome from "./src/locales/km/home.json"
+import kmMeta from "./src/locales/km/meta-tag.json"
 
 
 
@@ -21,10 +23,12 @@ i18n
       en: {
         navbar: enNavbar,
         home : enHome,
+        meta : enMeta
       },
       km: {
         navbar: kmNavbar,
-        home : kmHome
+        home : kmHome,
+        meta : kmMeta
       },
     },
     fallbackLng: 'en',
