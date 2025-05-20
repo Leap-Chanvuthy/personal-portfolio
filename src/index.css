@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap');
+
 /* styles/tailwind.css */
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
@@ -7,3 +9,7 @@
     background-color: black;
     color:white;
 } */
+
+.kh-font {
+    font-family: 'Kantumruy Pro', sans-serif;
+  }

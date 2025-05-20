@@ -13,7 +13,7 @@ const Components = () =>{
         <div>
             <Metatag title="Components | All Resusable Components" />
             <h1 className="font-bold text-xl">Resuable Components</h1>
-            <div className="flex items-center gap-5 my-5">
+            <div className="flex flex-col lg:md:flex-row items-center gap-5 my-5">
                 <PrimaryBtn text="Primary Button" />
                 <SecondaryBtn text="Secondary Button" />
                 <SecondaryBtnOutlined text="Secondary Outlined" />
@@ -26,7 +26,7 @@ const Components = () =>{
             <Timelines />
 
 
-            <div className="flex gap-5 my-10">
+            <div className="flex flex-col lg:md:flex-row gap-5 my-10">
                 <ServiceCard />
                 <ServiceCard />
                 <ServiceCard />

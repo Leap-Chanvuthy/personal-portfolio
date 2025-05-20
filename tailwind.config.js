@@ -13,7 +13,10 @@ export default {
         secondary_light : "#EDF7FA",
         dark :  "#21243D",
         light : "#8695A4",  
-      }
+      },
+      fontFamily: {
+        kh: ['"Kantumruy Pro"', 'sans-serif'],
+      },
     },
   },
   plugins: [require('flowbite/plugin')],
