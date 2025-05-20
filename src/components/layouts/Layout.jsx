@@ -29,7 +29,7 @@ const Layout = ({ children, className = "" }) => {
             <header>
                 <NavBar />
             </header>
-            <main className="flex-grow max-w-5xl mx-auto px-5">
+            <main className="flex-grow max-w-6xl mx-auto px-5">
                 {children || <div>No content available</div>}
             </main>
             <footer className="max-w-5xl mx-auto px-5">

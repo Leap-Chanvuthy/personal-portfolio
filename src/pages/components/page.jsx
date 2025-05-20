@@ -1,4 +1,5 @@
 import BlogCard from "../../components/resusable/blog-card";
+import Metatag from "../../components/resusable/meta-tag";
 import PrimaryBtn from "../../components/resusable/primary-btn"
 import SecondaryBtn from "../../components/resusable/secondary-btn"
 import SecondaryBtnOutlined from "../../components/resusable/secondary-btn-outlined";
@@ -10,6 +11,7 @@ import WorkCard from "../../components/resusable/work-card";
 const Components = () =>{
     return (
         <div>
+            <Metatag title="Components | All Resusable Components" />
             <h1 className="font-bold text-xl">Resuable Components</h1>
             <div className="flex items-center gap-5 my-5">
                 <PrimaryBtn text="Primary Button" />
@@ -24,7 +26,9 @@ const Components = () =>{
             <Timelines />
 
 
-            <div className="my-10">
+            <div className="flex gap-5 my-10">
+                <ServiceCard />
+                <ServiceCard />
                 <ServiceCard />
             </div>
 

@@ -3,16 +3,28 @@ import { Badge } from "flowbite-react";
 
 const WorkCard = ({image , title , badge , subtitle}) =>{
 
+    const truncateText = (text, maxLength) => {
+        if (text.length > maxLength) {
+            return text.slice(0, maxLength) + '...';
+        }
+        return text;
+    };
+
     return (
-        <div className="flex gap-5 items-start">
-            <img src={image} alt="work" className="w-56 h-40 object-cover rounded-lg" />
-            <div className="flex flex-col gap-2 mt-3">
-                <h2 className="font-bold">{title}</h2>
-                <div className="flex flex-wrap gap-2">
-                    <Badge>{badge}</Badge>
+        <div>
+            <div className="flex flex-col lg:md:flex-row gap-5 items-start">
+                <img src={image} alt="work" className="w-full lg:md:w-56 h-40 object-cover rounded-lg" />
+                <div className="flex flex-col gap-2 mt-3">
+                    <h2 className="font-bold">{title}</h2>
+                    <div className="flex flex-wrap gap-2">
+                        <Badge>{badge}</Badge>
+                    </div>
+                    <p className='text-sm'>
+                        {truncateText(subtitle || 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat id ligula efficitur facilisis. Donec euismod, nisi vel consectetur interdum, nisl nisi cursus nunc, eget tincidunt nunc nisl eget nunc.', 200)}
+                    </p>
                 </div>
-                <p>{subtitle}</p>
             </div>
+            <div className="border-[.5px] border-gray-200 dark:border-gray-600 w-full my-5" />
         </div>
     )
 }

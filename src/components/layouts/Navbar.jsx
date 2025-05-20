@@ -14,12 +14,25 @@ const NavBar = () => {
   
 
     return ( 
-            <div className='mx-10  sticky top-0 z-0'>
+            <div className='max-w-6xl mx-auto  sticky top-0 z-0'>
                 <Navbar fluid rounded>
                     <Navbar.Brand as={Link} href="/">
                     <img src="images/Leapchanvuthy.png" className="mr-3 h-10 rounded-md" alt="Flowbite React Logo" />
                     </Navbar.Brand>
-                    <Navbar.Toggle />
+                    <div className='flex gap-3 items-center'>
+                        <div className='flex lg:md:hidden'>
+                                {theme == 'dark' ?
+                                    <div className="border-2 border-gray-200 p-2 rounded-md cursor-pointer" onClick={toggle}>
+                                    <MdLightMode className="text-gray-500"/>
+                                    </div>
+                                    :
+                                    <div className="border-2 border-gray-200 p-2 rounded-md cursor-pointer" onClick={toggle}>
+                                    <MdNightlight className="text-gray-500" />
+                                    </div>
+                                }
+                            </div>
+                        <Navbar.Toggle />
+                    </div>
                     <Navbar.Collapse>
                         <Navbar.Link active={path == '/'}>
                             <Link to='/'>Home</Link>
@@ -33,7 +46,7 @@ const NavBar = () => {
                         <Navbar.Link active={path == '/projects'}>
                             <Link to='/projects'>Projects</Link>
                         </Navbar.Link>
-                        <div>
+                        <div className='hidden lg:md:flex'>
                             {theme == 'dark' ?
                                 <div className="border-2 border-gray-200 p-2 rounded-md cursor-pointer" onClick={toggle}>
                                 <MdLightMode className="text-gray-500"/>
