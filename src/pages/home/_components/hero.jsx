@@ -30,7 +30,7 @@ const Hero = () => {
                 />
                 <p className="max-w-[497px] my-10">{t('hero.subtitle')}</p>
                 <a>
-                    <PrimaryBtn text="Download Resume" />
+                    <PrimaryBtn text={t('hero.resume')} />
                 </a>
             </div>
             <img src={`${t('hero.imageUrl')}`} className="w-[250px] rounded-full" rounded />
