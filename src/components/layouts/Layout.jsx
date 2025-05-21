@@ -20,6 +20,7 @@
 // export default Layout;
 
 
+import BackgroundMusic from "../resusable/background-music";
 import BuyMeCoffee from "../resusable/buy-me-coffee";
 import Footer from "./Footer";
 import NavBar from "./Navbar";
@@ -34,6 +35,7 @@ const Layout = ({ children }) => {
                 {children || <div>No content available</div>}
             </main>
             <div>
+                <BackgroundMusic />
                 <BuyMeCoffee />
             </div>
             <footer className="max-w-5xl mx-auto px-5">
