@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import Metatag from "../../../components/resusable/meta-tag";
+import NavigationButton from "../../../components/resusable/navigation-button";
 
 const BlogDetail = () =>{
 
@@ -13,6 +14,9 @@ const BlogDetail = () =>{
     return (
         <div>
             <Metatag title={t('blog.title')} description="Blog Slug"/>
+            <div className="my-10">
+                <NavigationButton />
+            </div>
             <div className="flex flex-col gap-10">
                 <div className="flex flex-col gap-5">
                     <h1 className="text-2xl font-bold">ការអភិវឌ្ឍន៍ Web App ជាមួយ React</h1>

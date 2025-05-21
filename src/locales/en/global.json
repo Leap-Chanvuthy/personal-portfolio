@@ -5,5 +5,6 @@
         "icon" : "/assets/bmc-logo.svg",
         "title" : "You can buy me coffee here 😃👇",
         "abaLink" : "https://pay.ababank.com/HejronwpCV67WWsc8"
-    }
+    },
+    "navigationButton" : "Back"
 }
