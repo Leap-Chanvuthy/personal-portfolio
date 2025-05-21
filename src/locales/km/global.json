@@ -2,7 +2,7 @@
     "supportMe" : {
         "hi" : "សួរស្តី 👋",
         "thanks" : "សូមអរគុណច្រើន",
-        "icon" : "assets/bmc-logo.svg",
+        "icon" : "/assets/bmc-logo.svg",
         "title" : "ទិញកាហ្វេអោយខ្ញុំតាមរយៈ 😃👇",
         "abaLink" : "https://pay.ababank.com/HejronwpCV67WWsc8"
     }

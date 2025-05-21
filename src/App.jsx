@@ -5,6 +5,8 @@ import Layout from './components/layouts/Layout';
 import PrimaryBtn from './components/resusable/primary-btn';
 import Home from './pages/home/page';
 import Components from './pages/components/page';
+import Blog from './pages/blog/page';
+import BlogDetail from './pages/blog/[id]/page';
 
 function App() {
 
@@ -13,6 +15,8 @@ function App() {
       <Layout>
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/blogs' element={<Blog />} />
+          <Route path='/blog/:id' element={<BlogDetail/>} />
           <Route path='/components' element={<Components />} />
         </Routes>
       </Layout>

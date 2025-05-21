@@ -1,6 +1,7 @@
+import { Badge } from "flowbite-react";
 
 
-const BlogCard = ({image , title , publisedDate , category , body }) =>{
+const BlogCard = ({image , title , subtitle , publisedDate , category , body }) =>{
 
     const truncateText = (text, maxLength) => {
         if (text.length > maxLength) {
@@ -16,10 +17,10 @@ const BlogCard = ({image , title , publisedDate , category , body }) =>{
                 <div className="flex flex-col gap-2 mt-3">
                     <h2 className="font-bold">{title || "Leap Chanvuthy, Life as a coder" }</h2>
                     <div className="flex items-center flex-wrap gap-2">
-                        <span className="text-sm text-gray-500">{publisedDate || "12 January 2023"}</span> | {category || "Category"}
+                        <span className="text-sm text-gray-500">{publisedDate || "12 January 2023"}</span> | <Badge color="gray">{category || "Category"}</Badge>
                     </div>
                     <p className='text-sm'>
-                        {truncateText(body || 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat id ligula efficitur facilisis. Donec euismod, nisi vel consectetur interdum, nisl nisi cursus nunc, eget tincidunt nunc nisl eget nunc.', 200)}
+                        {truncateText(subtitle || 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat id ligula efficitur facilisis. Donec euismod, nisi vel consectetur interdum, nisl nisi cursus nunc, eget tincidunt nunc nisl eget nunc.', 200)}
                     </p>
                 </div>
             </div>
