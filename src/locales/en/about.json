@@ -1,0 +1,23 @@
+{
+    "hero" : {
+        "title" : "Get to know Leap Chanvuthy",
+        "textAnimated" : {
+            "text1" : "I am a Full-stack developer based in Phnom Penh.",
+            "text2" : "I love coding."
+        },
+        "subtitle" : "I am a fresh gratuate in Computer Science specializing in software engineering at Cambodia Academy of Digital Technology. Throughout my academic journey, I have developed a strong foundation in software engineering principles and practices. My coursework has equipped me with a solid understanding of Software Development !",
+        "getToKnow" : "Get to know me",
+        "images" : {
+            "image1" : "/images/activity4.jpg",
+            "image2" : "/images/activity2.jpg",
+            "image3" : "/images/activity1.jpg"
+        }
+    },
+    "quote" : {
+        "title" : "Word in Mind 😃👇",
+        "blockQuote" : "Even though fireworks are beautiful, But disappear in a flash, and a few seconds later turn into smoke."
+    },
+    "education" : {
+        "title" : "Education"
+    }
+}

@@ -10,7 +10,6 @@ const Blog = () => {
         <div>
             <Metatag title={t('blog.title')} description={t('blog.description')} />
             <AllBlogs />
-            
         </div>
     );
 }

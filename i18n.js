@@ -4,16 +4,19 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 
 // English translations
 import enGlobal from "./src/locales/en/global.json";
-import enNavbar from "./src/locales/en/navbar.json"
-import enHome from "./src/locales/en/home.json"
-import enMeta from "./src/locales/en/meta-tag.json"
+import enNavbar from "./src/locales/en/navbar.json";
+import enHome from "./src/locales/en/home.json";
+import enMeta from "./src/locales/en/meta-tag.json";
+import enAbout from "./src/locales/en/about.json";
 
 
 // Khmer translations
 import kmGlobal from "./src/locales/km/global.json";
-import kmNavbar from "./src/locales/km/navbar.json"
-import kmHome from "./src/locales/km/home.json"
-import kmMeta from "./src/locales/km/meta-tag.json"
+import kmNavbar from "./src/locales/km/navbar.json";
+import kmHome from "./src/locales/km/home.json";
+import kmMeta from "./src/locales/km/meta-tag.json";
+import kmAbout from "./src/locales/km/about.json"
+
 
 
 
@@ -26,13 +29,15 @@ i18n
         global : enGlobal,
         navbar: enNavbar,
         home : enHome,
-        meta : enMeta
+        meta : enMeta,
+        about : enAbout,
       },
       km: {
         global : kmGlobal,
         navbar: kmNavbar,
         home : kmHome,
-        meta : kmMeta
+        meta : kmMeta,
+        about : kmAbout,
       },
     },
     fallbackLng: 'en',
