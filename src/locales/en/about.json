@@ -19,5 +19,8 @@
     },
     "education" : {
         "title" : "Education"
+    },
+    "work" : {
+        "title" : "Work Experience"
     }
 }

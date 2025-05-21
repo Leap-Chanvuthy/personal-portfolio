@@ -8,7 +8,6 @@ import {
     TimelineTime,
     TimelineTitle,
 } from "flowbite-react";
-import { HiArrowNarrowRight } from "react-icons/hi";
 import { enEducations } from "../../../data/education-en";
 import { kMeducations } from "../../../data/education-km";
 import { useTranslation } from "react-i18next";
@@ -57,7 +56,7 @@ const Education = () => {
                     </Timeline>
                 </div>
             }
-
+            <div className="border-[.5px] border-gray-200 dark:border-gray-600 w-full my-5" />
         </div>
     )
 }

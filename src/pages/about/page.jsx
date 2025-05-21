@@ -3,6 +3,7 @@ import Metatag from "../../components/resusable/meta-tag";
 import Hero from "./_components/hero";
 import Quote from "./_components/quote";
 import Education from "./_components/education";
+import WorkHistory from "./_components/work-history";
 
 const About = () =>{
     
@@ -14,6 +15,7 @@ const About = () =>{
             <Hero />
             <Quote />
             <Education />
+            <WorkHistory />
         </div>
     )
 }
