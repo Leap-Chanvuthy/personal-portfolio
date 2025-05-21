@@ -11,6 +11,13 @@ import {
 import { enEducations } from "../../../data/education-en";
 import { kMeducations } from "../../../data/education-km";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
+
+const fadeInUp = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0 },
+};
+
 
 const Education = () => {
 
@@ -24,16 +31,24 @@ const Education = () => {
                     <h2 className="font-bold text-2xl my-5">{t('education.title')}</h2>
                     <Timeline>
                         {enEducations && enEducations.map((edu) => (
-                            <TimelineItem>
-                                <TimelinePoint />
-                                <TimelineContent>
-                                    <TimelineTime>{edu.date}</TimelineTime>
-                                    <TimelineTitle>{edu.title}</TimelineTitle>
-                                    <TimelineBody>
-                                        {edu.subtitle}
-                                    </TimelineBody>
-                                </TimelineContent>
-                            </TimelineItem>
+                            <motion.div
+                                variants={fadeInUp}
+                                initial="hidden"
+                                whileInView="visible"
+                                viewport={{ once: true, amount: 0.3 }}
+                                transition={{ duration: 0.6 }}
+                            >
+                                <TimelineItem>
+                                    <TimelinePoint />
+                                    <TimelineContent>
+                                        <TimelineTime>{edu.date}</TimelineTime>
+                                        <TimelineTitle>{edu.title}</TimelineTitle>
+                                        <TimelineBody>
+                                            {edu.subtitle}
+                                        </TimelineBody>
+                                    </TimelineContent>
+                                </TimelineItem>
+                            </motion.div>
                         ))}
                     </Timeline>
                 </div>
@@ -42,16 +57,24 @@ const Education = () => {
                     <h2 className="font-bold text-2xl my-5">{t('education.title')}</h2>
                     <Timeline>
                         {kMeducations && kMeducations.map((edu) => (
-                            <TimelineItem>
-                                <TimelinePoint />
-                                <TimelineContent>
-                                    <TimelineTime>{edu.date}</TimelineTime>
-                                    <TimelineTitle>{edu.title}</TimelineTitle>
-                                    <TimelineBody>
-                                        {edu.subtitle}
-                                    </TimelineBody>
-                                </TimelineContent>
-                            </TimelineItem>
+                            <motion.div
+                                variants={fadeInUp}
+                                initial="hidden"
+                                whileInView="visible"
+                                viewport={{ once: true, amount: 0.3 }}
+                                transition={{ duration: 0.6 }}
+                            >
+                                <TimelineItem>
+                                    <TimelinePoint />
+                                    <TimelineContent>
+                                        <TimelineTime>{edu.date}</TimelineTime>
+                                        <TimelineTitle>{edu.title}</TimelineTitle>
+                                        <TimelineBody>
+                                            {edu.subtitle}
+                                        </TimelineBody>
+                                    </TimelineContent>
+                                </TimelineItem>
+                            </motion.div>
                         ))}
                     </Timeline>
                 </div>
