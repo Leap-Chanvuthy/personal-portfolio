@@ -17,7 +17,7 @@ const WorkCard = ({image , title , badge , subtitle}) =>{
                 <div className="flex flex-col gap-2 mt-3">
                     <h2 className="font-bold">{title}</h2>
                     <div className="flex flex-wrap gap-2">
-                        <Badge>{badge}</Badge>
+                        <Badge color="gray">{badge}</Badge>
                     </div>
                     <p className='text-sm'>
                         {truncateText(subtitle || 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat id ligula efficitur facilisis. Donec euismod, nisi vel consectetur interdum, nisl nisi cursus nunc, eget tincidunt nunc nisl eget nunc.', 200)}
