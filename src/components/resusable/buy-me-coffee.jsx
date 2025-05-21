@@ -8,7 +8,7 @@ const BuyMeCoffee = () => {
             <div className="flex flex-col lg:md:flex-row items-start gap-5 my-5">
                 <img src="assets/bmc-logo.svg" />
                 <div>
-                    <p className="font-bold">You can support me here 😃👇</p>
+                    <p className="font-bold">You can buy me coffee here 😃👇</p>
                     <a className="underline" target="_blank" href="https://pay.ababank.com/HejronwpCV67WWsc8">https://pay.ababank.com/HejronwpCV67WWsc8</a>
                 </div>
             </div>
