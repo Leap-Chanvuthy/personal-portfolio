@@ -22,7 +22,7 @@ const FeaturedWorks = () => {
                     image="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg"
                     badge="Web Design"
                 />
-                            <WorkCard
+                <WorkCard
                     title="Web Development and Web Design"
                     subtitle="Vuthy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat id ligula efficitur facilisis. Donec euismod, nisi vel consectetur interdum, nisl nisi cursus nunc, eget tincidunt nunc nisl eg..."
                     image="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg"

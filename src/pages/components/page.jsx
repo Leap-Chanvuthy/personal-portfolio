@@ -1,4 +1,5 @@
 import BlogCard from "../../components/resusable/blog-card";
+import GridImage from "../../components/resusable/grid-image";
 import Metatag from "../../components/resusable/meta-tag";
 import PrimaryBtn from "../../components/resusable/primary-btn"
 import SecondaryBtn from "../../components/resusable/secondary-btn"
@@ -30,6 +31,10 @@ const Components = () =>{
                 <ServiceCard />
                 <ServiceCard />
                 <ServiceCard />
+            </div>
+
+            <div className="my-10">
+                <GridImage />
             </div>
 
             <BlogCard image="https://view.subpage.app/app/company/C532b8873cc5442e2b1f2265b77a7d7dc/domain/MTiT0jFlGh/page/M6K4TirmGh/glossary/M36e5669dfd4b52477c65571a1479acd81676987587657/file/Mb4de6e716cf9eb420a1f39b7a0b320481707989448555.jpeg" />

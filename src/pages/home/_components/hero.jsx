@@ -2,19 +2,18 @@ import { Avatar } from "flowbite-react";
 import { useTranslation } from "react-i18next";
 import { TypeAnimation } from "react-type-animation";
 import PrimaryBtn from "../../../components/resusable/primary-btn";
+import GridImage from "../../../components/resusable/grid-image";
 
 const Hero = () => {
 
     const { t, i18n } = useTranslation('home');
 
-    const sequence = [
-        `${t('hero.textAnimated.text1')}`
-    ]
-
     return (
         <div className={`flex flex-col-reverse md:flex-row mx-10 lg:md:mx-auto justify-between items-center gap-10 ${i18n.language == "km" ? "font-kh" : ""}`}>
             <div>
-                <h1 className={`text-5xl font-bold mb-10`}>{t('hero.title')}</h1>
+            <h1 className={`text-4xl lg:md:text-5xl font-bold mb-10 leading-snug sm:leading-tight`}>
+  {t('hero.title')}
+</h1>
                 <TypeAnimation
                     className="font-bold text-secondary"
                     sequence={[
@@ -33,7 +32,12 @@ const Hero = () => {
                     <PrimaryBtn text={t('hero.resume')} />
                 </a>
             </div>
-            <img src={`${t('hero.imageUrl')}`} className="w-[250px] rounded-full" rounded />
+
+            <GridImage 
+                image1={t('hero.images.image1')} 
+                image2={t('hero.images.image2')} 
+                image3={t('hero.images.image3')} 
+            />
         </div>
     )
 }

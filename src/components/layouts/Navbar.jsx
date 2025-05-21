@@ -19,7 +19,7 @@ const NavBar = () => {
         <div className='max-w-6xl mx-auto  sticky top-0 z-0'>
             <Navbar fluid rounded>
                 <Navbar.Brand as={Link} href="/">
-                    <img src="images/Leapchanvuthy.png" className="mr-3 h-10 rounded-md" alt="Flowbite React Logo" />
+                    <Link to="/"><img src="images/Leapchanvuthy.png" className="mr-3 h-10 rounded-md" alt="Flowbite React Logo" /></Link>
                 </Navbar.Brand>
                 <div className='flex gap-3 items-center'>
                     <div className='flex lg:md:hidden'>

@@ -6,7 +6,11 @@
             "text2" : "I love coding."
         },
         "subtitle" : "I am a fresh gratuate in Computer Science specializing in software engineering at Cambodia Academy of Digital Technology. Throughout my academic journey, I have developed a strong foundation in software engineering principles and practices. My coursework has equipped me with a solid understanding of Software Development !",
-        "imageUrl" : "images/Leapchanvuthy.png",
+        "images" : {
+            "image1" : "images/Leapchanvuthy4.jpg",
+            "image2" : "images/Leapchanvuthy3.jpg",
+            "image3" : "images/Leapchanvuthy.png"
+        },
         "resume" : "My Resume"
     },
     "recentPost" : {
