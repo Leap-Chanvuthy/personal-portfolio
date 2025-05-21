@@ -20,6 +20,7 @@
 // export default Layout;
 
 
+import BuyMeCoffee from "../resusable/buy-me-coffee";
 import Footer from "./Footer";
 import NavBar from "./Navbar";
 
@@ -32,6 +33,9 @@ const Layout = ({ children }) => {
             <main className="max-w-6xl mx-auto my-28">
                 {children || <div>No content available</div>}
             </main>
+            <div>
+                <BuyMeCoffee />
+            </div>
             <footer className="max-w-5xl mx-auto px-5">
                 <Footer />
             </footer>

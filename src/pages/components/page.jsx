@@ -1,4 +1,5 @@
 import BlogCard from "../../components/resusable/blog-card";
+import BuyMeCoffee from "../../components/resusable/buy-me-coffee";
 import GridImage from "../../components/resusable/grid-image";
 import Metatag from "../../components/resusable/meta-tag";
 import PrimaryBtn from "../../components/resusable/primary-btn"
@@ -31,6 +32,10 @@ const Components = () =>{
                 <ServiceCard />
                 <ServiceCard />
                 <ServiceCard />
+            </div>
+
+            <div className="my-10">
+                <BuyMeCoffee />
             </div>
 
             <div className="my-10">
