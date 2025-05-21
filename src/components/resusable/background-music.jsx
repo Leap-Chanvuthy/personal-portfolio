@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { FaVolumeUp, FaVolumeMute } from 'react-icons/fa';
+import { FaVolumeMute } from 'react-icons/fa';
 
 const BackgroundMusic = () => {
   const audioRef = useRef(null);
@@ -9,7 +9,6 @@ const BackgroundMusic = () => {
     if (!audioRef.current) return;
     if (isPlaying) {
       audioRef.current.play().catch(() => {
-        // Autoplay might be blocked
       });
     } else {
       audioRef.current.pause();
@@ -29,10 +28,20 @@ const BackgroundMusic = () => {
 
       <button
         onClick={togglePlay}
-        className={` ${isPlaying ? "bg-secondary" : "bg-primary"} fixed bottom-4 right-4 z-50 p-3 rounded-full text-white shadow-lg transition-colors`}
+        className={`${
+          isPlaying ? "bg-dark" : "bg-primary"
+        } fixed bottom-4 right-4 z-50 p-3 rounded-full text-white shadow-lg transition-colors`}
         aria-label="Toggle Music"
       >
-        {isPlaying ? <img className='w-10 h-10' src='/assets/chill-guy.png' />: <FaVolumeMute size={24} />}
+        {isPlaying ? (
+          <img
+            src="/assets/chill-guy.png"
+            className="w-10 h-10 animate-spin"
+            alt="Playing music"
+          />
+        ) : (
+          <FaVolumeMute size={24} />
+        )}
       </button>
     </>
   );
