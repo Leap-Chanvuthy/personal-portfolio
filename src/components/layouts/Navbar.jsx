@@ -5,6 +5,14 @@ import { toggleTheme } from '../../redux/slices/themeSlice';
 import { MdLightMode, MdNightlight } from 'react-icons/md';
 import { useTranslation } from 'react-i18next';
 import LanguageSelector from '../resusable/language-selector';
+import { motion } from 'framer-motion';
+
+const fadeInUp = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0 },
+  };
+
+
 const NavBar = () => {
     const { t, i18n } = useTranslation('navbar');
     const path = useLocation().pathname;
@@ -15,8 +23,34 @@ const NavBar = () => {
     }
 
 
+    const navLinks = [
+        {
+            path : "/",
+            label : `${t('home')}`
+        },
+        {
+            path : "/about",
+            label : `${t('about')}`
+        },
+        {
+            path : "/projects",
+            label : `${t('project')}`
+        },        {
+            path : "/blogs",
+            label : `${t('blog')}`
+        },
+        {
+            path : "/services",
+            label : `${t('service')}`
+        },        {
+            path : "/components",
+            label : "Components"
+        },
+    ];
+
+
     return (
-        <div className='max-w-6xl mx-auto  sticky top-0 z-0'>
+        <div className='max-w-6xl mx-10 py-5 lg:md:mx-auto  sticky top-0 z-0'>
             <Navbar fluid rounded>
                 <Navbar.Brand as={Link} href="/">
                     <Link to="/"><img src="images/Leapchanvuthy.png" className="mr-3 h-10 rounded-md" alt="Flowbite React Logo" /></Link>
@@ -40,24 +74,19 @@ const NavBar = () => {
                 </div>
                 <Navbar.Collapse>
                     <div className={`flex flex-col lg:md:flex-row w-full lg:items-center font-bold text-md dark:text-white  gap-6 ${i18n.language == 'km' ? 'font-kh' : '' } `}>
-                        <Navbar.Link className='rounded-lg' active={path == '/'}>
-                            <Link to='/'>{t('home')}</Link>
-                        </Navbar.Link>
-                        <Navbar.Link className='rounded-lg'  active={path == '/about'}>
-                            <Link to='/about'>{t('about')}</Link>
-                        </Navbar.Link>
-                        <Navbar.Link className='rounded-lg'  active={path == '/projects'}>
-                            <Link to='/projects'>{t('project')}</Link>
-                        </Navbar.Link>
-                        <Navbar.Link className='rounded-lg'  active={path == '/blogs'}>
-                            <Link to='/blogs'>{t('blog')}</Link>
-                        </Navbar.Link>
-                        <Navbar.Link className='rounded-lg'  active={path == '/services'}>
-                            <Link to='/services'>{t('service')}</Link>
-                        </Navbar.Link>
-                        <Navbar.Link className='rounded-lg'  active={path == '/components'}>
-                            <Link to='/components'>Component</Link>
-                        </Navbar.Link>
+                        {navLinks && navLinks.map((navLink , index) => (
+                            <motion.div
+                                  variants={fadeInUp}
+                                  initial="hidden"
+                                  whileInView="visible"
+                                  viewport={{ once: true, amount: 0.3 }}
+                                  transition={{ duration: 0.6 }}
+                                >
+                                <Navbar.Link key={index} className='rounded-lg' active={path == `${navLink.path}`}>
+                                    <Link to={`${navLink.path}`}>{navLink.label}</Link>
+                                </Navbar.Link>
+                            </motion.div>
+                        ))}
                         <div className='hidden lg:md:flex'>
                             <LanguageSelector />
                         </div>

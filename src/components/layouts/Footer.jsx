@@ -7,25 +7,28 @@ import { FaLinkedin } from "react-icons/fa";
 
 
 const Footer = () => {
+
+    const currentYear = new Date().getFullYear();
+
     return (
         <footer className='flex flex-col justify-center items-center gap-5 my-10'>
             <div className="flex justify-center items-center gap-4">
                 <Link to="https://www.facebook.com/leapchanvuthy" target="_blank">
                     <FaFacebook className="text-2xl" />
                 </Link>
-                <Link to="https://t.me/Leapchanvuthy" target="_blank">
+                <Link to="https://t.me/chanvuthyleap" target="_blank">
                     <FaTelegram className="text-2xl" />
                 </Link>
-                <Link to="https://t.me/Leapchanvuthy" target="_blank">
+                <Link to="https://github.com/Leap-Chanvuthy" target="_blank">
                     <FaGithub className="text-2xl" />
                 </Link>
-                <Link to="https://t.me/Leapchanvuthy" target="_blank">
+                <Link to="https://www.linkedin.com/in/leap-chanvuthy-9402b8282/" target="_blank">
                     <FaLinkedin className="text-2xl" />
                 </Link>
             </div>
             <div className='flex flex-col justify-center items-center gap-2'>
                 <span>Leap Chanvuthy</span>
-                <p>Copyright ©2020 All rights reserved </p>
+                <p>Copyright ©{currentYear} All rights reserved.</p>
             </div>
         </footer>
     );

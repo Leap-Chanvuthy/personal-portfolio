@@ -12,10 +12,6 @@ import About from './pages/about/page';
 
 
 function App() {
-
-  const resumeLink = import.meta.env.VITE_RESUME_LINK;
-  console.log("Resume Link:", resumeLink);
-
   return (
     <BrowserRouter>
       <Layout>
