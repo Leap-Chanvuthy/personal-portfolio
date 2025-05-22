@@ -1,4 +1,3 @@
-import { Avatar } from "flowbite-react";
 import { useTranslation } from "react-i18next";
 import { TypeAnimation } from "react-type-animation";
 import PrimaryBtn from "../../../components/resusable/primary-btn";
@@ -28,7 +27,7 @@ const Hero = () => {
                     repeat={Infinity}
                 />
                 <p className="max-w-[497px] my-10">{t('hero.subtitle')}</p>
-                <a>
+                <a target="_blank" href={`${import.meta.env.VITE_RESUME_LINK}`}>
                     <PrimaryBtn text={t('hero.resume')} />
                 </a>
             </div>
