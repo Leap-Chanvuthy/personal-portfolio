@@ -29,7 +29,7 @@ const Components = () =>{
 
 
             <div className="flex flex-col lg:md:flex-row gap-5 my-10">
-                <ServiceCard />
+                <ServiceCard iconColor="#42c2f5" />
                 <ServiceCard />
                 <ServiceCard />
             </div>
