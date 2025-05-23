@@ -1,9 +1,12 @@
 import { Badge } from "flowbite-react";
 import PrimaryBtn from "./primary-btn";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 
 const WorkCard = ({id , image , title , badges , subtitle , body}) =>{
+
+    const {t} = useTranslation('global');
 
     const truncateText = (text, maxLength) => {
         if (text.length > maxLength) {
@@ -29,7 +32,7 @@ const WorkCard = ({id , image , title , badges , subtitle , body}) =>{
                         {truncateText(subtitle || 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat id ligula efficitur facilisis. Donec euismod, nisi vel consectetur interdum, nisl nisi cursus nunc, eget tincidunt nunc nisl eget nunc.', 200)}
                     </p>
                     <Link to={`/project/${id}`}>
-                        <p className="text-secondary underline">Read more</p>
+                        <p className="text-secondary underline">{t('projectCard.readMore')}</p>
                     </Link>
                 </div>
             </div>
