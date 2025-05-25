@@ -85,8 +85,8 @@ body: `
         ,
         tags: ["React", "Fillament", "Laravel", "Flutter", "Team Project", "Capstone", "CADT"],
         images: [
-            "/projects/real-estate/thumbnail.png",
             "/projects/real-estate/thumbnail-1.png",
+            "/projects/real-estate/thumbnail.png",
             "/projects/real-estate/team.png",
             "/projects/real-estate/website-1.png",
             "/projects/real-estate/website-2.png",
