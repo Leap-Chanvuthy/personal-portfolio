@@ -17,7 +17,7 @@ const About = () => {
     const { t } = useTranslation('meta');
 
     return (
-        <div>
+        <div className="my-28">
             <Metatag title={t('about.title')} description={t('about.description')} />
             
             <motion.div

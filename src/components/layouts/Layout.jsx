@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
             <header>
                 <NavBar />
             </header>
-            <main className="max-w-6xl mx-auto my-28">
+            <main className="max-w-6xl mx-auto">
                 {children || <div>No content available</div>}
             </main>
             <div>

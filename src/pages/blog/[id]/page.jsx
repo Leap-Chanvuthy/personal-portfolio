@@ -1,29 +1,40 @@
 import { useTranslation } from "react-i18next";
 import Metatag from "../../../components/resusable/meta-tag";
 import NavigationButton from "../../../components/resusable/navigation-button";
+import { useParams } from "react-router-dom";
+import { blogs } from "../../../data/blogs";
+import { Badge } from "flowbite-react";
 
-const BlogDetail = () =>{
+const BlogDetail = () => {
 
-    const {t} = useTranslation('meta');
-    const richText = `
-        <p>React គឺជាបណ្ណាល័យ JavaScript ប្រើសម្រាប់បង្កើត UI។ វាអាចអភិវឌ្ឍបានលឿន និងអាច scale បាន។ Learn about modern typography, spacing, and color schemes that enhance user experience.</p>
-        <p>Learn about modern typography, spacing, and color schemes that enhance user experience.</p>
-        <ul><li>Use HTTPS</li><li>Rate Limiting</li><li>Authentication & Authorization</li></ul>
-    `;
+    const { i18n } = useTranslation('meta');
+    const { id } = useParams();
+
+    const blog = blogs.find((blog) => blog.id === parseInt(id));
+    if (!blog) {
+        return <div className="text-center my-10">Blog not found</div>;
+    }
 
     return (
-        <div>
-            <Metatag title={t('blog.title')} description="Blog Slug"/>
+        <div className="mx-5 lg:md:mx-auto">
+            {i18n.language == "en" ?
+                <Metatag title={`${blog.category} | Leap Chanvuthy`} description={blog.subtitle} />
+                :
+                <Metatag title={`${blog.category} | លាភ​ ច័ន្ទវុទ្ធី`} description={blog.subtitle} />
+            }
             <div className="my-10">
                 <NavigationButton />
             </div>
             <div className="flex flex-col gap-10">
                 <div className="flex flex-col gap-5">
-                    <h1 className="text-2xl font-bold">ការអភិវឌ្ឍន៍ Web App ជាមួយ React</h1>
-                    <p>ការប្រើប្រាស់ React ដើម្បីបង្កើត Web App ប្រកបដោយប្រសិទ្ធភាព</p>
+                    <h1 className="text-2xl font-bold">{blog.title}</h1>
+                    <p>{blog.subtitle} | {blog.publisedDate}</p>
+                    <div className="flex flex-wrap gap-2">
+                        <Badge color="gray">{blog.category}</Badge>
+                    </div>
                 </div>
-                <img className="w-full h-[35rem] object-cover rounded-lg" src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg" />
-                <div dangerouslySetInnerHTML={{ __html: richText }} />
+                <img className="w-full h-[35rem] object-cover rounded-lg" src={blog.image} />
+                <div dangerouslySetInnerHTML={{ __html: blog.body }} />
             </div>
         </div>
     )

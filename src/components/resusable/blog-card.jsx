@@ -13,7 +13,7 @@ const BlogCard = ({image , title , subtitle , publisedDate , category , body }) 
     return (
         <div>
             <div className="flex flex-col lg:md:flex-row gap-5 items-start">
-                <img src={image} alt="work" className="w-full lg:md:w-56 h-40 object-cover rounded-lg" />
+                <img src={image} alt="work" className="w-full lg:md:w-64 h-40 object-cover rounded-lg" />
                 <div className="flex flex-col gap-2 mt-3">
                     <h2 className="font-bold">{title || "Leap Chanvuthy, Life as a coder" }</h2>
                     <div className="flex items-center flex-wrap gap-2">

@@ -42,10 +42,11 @@ const NavBar = () => {
         {
             path : "/services",
             label : `${t('service')}`
-        },        {
-            path : "/components",
-            label : "Components"
-        },
+        },        
+        // {
+        //     path : "/components",
+        //     label : "Components"
+        // },
     ];
 
 

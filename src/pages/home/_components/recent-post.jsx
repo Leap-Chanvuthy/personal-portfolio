@@ -1,23 +1,54 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import BlogCard from "../../../components/resusable/blog-card";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
+import { blogs } from "../../../data/blogs";
+import GlobalPagination from "../../../components/resusable/pagination";
+
+const fadeInUp = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0 },
+};
 
 
-const RecentPost = () =>{
+const RecentPost = () => {
 
-    const {t} = useTranslation('home')
+    const { t } = useTranslation("home");
 
     return (
         <div className="bg-secondary_light dark:bg-dark my-10 p-5">
-            <div className="flex justify-between my-5">
-                <h3 className="text-lg font-bold">{t('recentPost.title')}</h3>
-                <Link to="/blogs">
-                    <p className="text-secondary underline">{t('recentPost.view')}</p>
-                </Link>
-            </div>
             <div>
-                <BlogCard image="https://view.subpage.app/app/company/C532b8873cc5442e2b1f2265b77a7d7dc/domain/MTiT0jFlGh/page/M6K4TirmGh/glossary/M36e5669dfd4b52477c65571a1479acd81676987587657/file/Mb4de6e716cf9eb420a1f39b7a0b320481707989448555.jpeg" />
-                <BlogCard image="https://view.subpage.app/app/company/C532b8873cc5442e2b1f2265b77a7d7dc/domain/MTiT0jFlGh/page/M6K4TirmGh/glossary/M36e5669dfd4b52477c65571a1479acd81676987587657/file/Mb4de6e716cf9eb420a1f39b7a0b320481707989448555.jpeg" />
+                <div className="p-5">
+                    <div className="flex justify-between my-5">
+                        <h3 className="text-lg font-bold">{t("recentPost.title")}</h3>
+                        <Link to="/blogs">
+                            <p className="text-secondary underline">{t("recentPost.view")}</p>
+                        </Link>
+                    </div>
+                    <div>
+                        {blogs.slice(-3).map((blog) => (
+                            <Link to={`/blog/${blog.id}`}>
+                                <motion.div
+                                    variants={fadeInUp}
+                                    initial="hidden"
+                                    whileInView="visible"
+                                    viewport={{ once: true, amount: 0.3 }}
+                                    transition={{ duration: 0.6 }}
+                                >
+                                    <BlogCard
+                                        key={blog.id}
+                                        image={blog.image}
+                                        title={blog.title}
+                                        subtitle={blog.subtitle}
+                                        publisedDate={blog.publisedDate}
+                                        category={blog.category}
+                                    />
+                                </motion.div>
+                            </Link>
+                        ))}
+                    </div>
+                </div>
             </div>
         </div>
     );

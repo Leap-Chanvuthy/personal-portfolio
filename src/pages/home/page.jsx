@@ -42,7 +42,7 @@ const Home = () => {
   const { t } = useTranslation("meta");
 
   return (
-    <div>
+    <div className="my-28">
       <Metatag title={t("home.title")} description={t("home.description")} />
 
       <motion.div
@@ -60,9 +60,9 @@ const Home = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
+        transition={{ duration: 0.6, delay: 0.4 }}
       >
-        <RecentPost />
+        <FeaturedWorks />
       </motion.div>
 
       <motion.div
@@ -70,9 +70,9 @@ const Home = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
-        transition={{ duration: 0.6, delay: 0.4 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
       >
-        <FeaturedWorks />
+        <RecentPost />
       </motion.div>
     </div>
   );

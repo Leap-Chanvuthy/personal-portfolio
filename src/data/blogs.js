@@ -154,7 +154,7 @@ export const blogs = [
       },
       {
         id: 18,
-        image: "https://images.pexels.com/photos/3861983/pexels-photo-3861983.jpeg",
+        image: "https://miro.medium.com/v2/resize:fit:711/1*PySU6ZmvjB_SAl4-vMp3Sw.png",
         title: "Continuous Integration with GitHub Actions",
         subtitle: "Automate testing and deployment",
         body: "<p>Use GitHub Actions to run your tests, build your app, and deploy it automatically on every push.</p>",
@@ -163,7 +163,7 @@ export const blogs = [
     },
     {
       id: 19,
-      image: "https://source.unsplash.com/800x600/?seo",
+      image: "https://miro.medium.com/v2/resize:fit:1200/0*5SwS2vpFBi0swI-O.png",
       title: "គន្លឹះ SEO សម្រាប់ Web Developer",
       subtitle: "ធ្វើឱ្យវេបសាយរបស់អ្នកត្រូវបានស្គាល់ក្នុង Google",
       body: "<p>ប្រើប្រាស់ React Helmet, sitemap.xml និង canonical URLs ដើម្បីបង្កើន SEO។</p>",
@@ -172,7 +172,7 @@ export const blogs = [
     },
     {
       id: 20,
-      image: "https://source.unsplash.com/800x600/?cms",
+      image: "https://cdn.sanity.io/images/3do82whm/next/a6631afb88ab609e8bc64b700b9f2c50998739b4-685x345.svg",
       title: "Headless CMS for React Developers",
       subtitle: "Use Strapi or Sanity to manage content",
       body: "<p>Headless CMS gives you full control over your frontend while making content management easier.</p>",
