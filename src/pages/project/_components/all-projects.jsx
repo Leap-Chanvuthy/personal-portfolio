@@ -39,7 +39,7 @@ const AllProjects = () => {
                                 <WorkCard
                                     id={project.id}
                                     title={project.title}
-                                    image={project.images[1]}
+                                    image={project.images[0]}
                                     badges={project.tags}
                                     subtitle={project.subtitle}
                                 />
@@ -61,7 +61,7 @@ const AllProjects = () => {
                                 <WorkCard
                                     id={project.id}
                                     title={project.title}
-                                    image={project.images[1]}
+                                    image={project.images[0]}
                                     badges={project.tags}
                                     subtitle={project.subtitle}
                                 />

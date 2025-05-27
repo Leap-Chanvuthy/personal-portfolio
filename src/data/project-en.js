@@ -3,7 +3,7 @@ export const enProjects = [
         id: 1,
         title: "Real Estate Platform",
         subtitle: "Capstone Project | Web & Mobile Real Estate System",
-body: `
+        body: `
   <p><strong>1. Project Introduction, Objective, Overview, and Literature Review</strong></p>
   <br/>
   <p>This project is a <strong>comprehensive digital real estate management system</strong> developed as a capstone project by a dedicated team. It includes a <strong>responsive website</strong>, a <strong>mobile application</strong>, and a robust <strong>backoffice admin dashboard</strong>.</p>
@@ -111,5 +111,35 @@ body: `
                 link: "N/A"
             }
         ]
-    }
+    }, {
+        id: 2,
+        title: "Inventory & Production Management System",
+        subtitle: "Custom-built Inventory & Production Management System + Web App for SMEs",
+        body: `<h2><strong>Inventory &amp; Production Management System</strong></h2><p><br></p><h3><strong>1. Project Introduction</strong></h3><p><br></p><p>The <strong>Inventory and Production Management System</strong> is a fully custom-built web application developed to empower manufacturing businesses, especially small and medium enterprises (SMEs), to manage their inventory and production workflows more effectively. This system was designed and implemented under the GIZ-ICONE program, in collaboration with local Cambodian businesses such as <strong>Toeuk Somrong</strong>, a producer of traditional bottled drinks.</p><p>The platform offers a comprehensive set of features essential for manufacturing operations, including:</p><ul><li>Inventory tracking for raw materials and finished goods</li><li>Production order management</li><li>Purchase invoice and sales tracking (quotes and invoices)</li><li>Automated Telegram Bot notifications for real-time updates</li><li>Advanced reporting and analytics dashboard</li><li>Exportable reports for external analysis</li><li>Full <strong>Khmer language localization</strong> for non-English speaking users</li><li>Responsive design for desktop, tablet, and mobile use</li></ul><p>The system was designed with a user-friendly interface and prioritizes accessibility for Cambodian entrepreneurs, addressing the gap left by global tools like QuickBooks that are often too complex and not localized.</p><p><br></p><h3><strong>2. Problematic</strong></h3><p><br></p><p>SMEs in Cambodia, particularly in provinces like <strong>Siem Reap</strong>, <strong>Battambang</strong>, and <strong>Banteay Meanchey</strong>, often face difficulties adapting to advanced inventory or ERP systems due to their complexity and lack of Khmer language support.</p><p>Existing tools are typically built for enterprise-level users with technical backgrounds, making them inaccessible to local business owners. The lack of intuitive design and culturally relevant language support has left a digital gap in the Cambodian SME market.</p><p>This custom-built system bridges that gap by offering an easy-to-use, Khmer-localized, and purpose-driven solution that enhances production efficiency and transparency.</p><p><br></p><h3><strong>3. Project Planning</strong></h3><p><br></p><p>The development and implementation of this system followed a structured 11-month timeline, from <strong>August 2024 to June 2025</strong>, with clearly defined phases:</p><ul><li><strong>Phase 1: Requirement Study</strong> – 2 Weeks</li><li>Analysis of business needs, existing system limitations, and digital maturity</li><li><strong>Phase 2: System Design</strong> – 2 Weeks</li><li>Database structure, UX/UI wireframing, system architecture planning</li><li><strong>Phase 3: Implementation</strong> – 34 Weeks</li><li>Backend &amp; frontend development, API integration, Telegram Bot setup</li><li><strong>Phase 4: Testing</strong> – 2 Weeks</li><li>Unit testing, integration testing, performance &amp; security validation</li><li><strong>Phase 5: Documentation &amp; Deployment</strong> – 2 Weeks</li><li>User manuals, system documentation, server configuration, go-live</li><li><strong>Phase 6: Training</strong> – Ongoing</li><li>Business owner training under the GIZ-ICONE program</li><li><strong>Phase 7: Maintenance &amp; Support</strong> – Ongoing</li><li>Continuous monitoring, updates, and bug fixes</li></ul><p><br></p><h3><strong>4. Role &amp; Responsibilities</strong></h3><p><br></p><ul><li><strong>Mr. Pheak Reaksmey</strong> – Project Advisor, GIZ-ICONE Program</li><li><strong>Mr. Leap Chanvuthy</strong> – Lead Developer, Fullstack Developer, Technical Trainer</li><li><strong>John Kimleang</strong> – Frontend Developer</li><li><strong>Kong Tiven</strong> – Frontend Developer</li><li><strong>Chhun Chandavit</strong> – Frontend Developer</li></ul><p><br></p><h3><strong>5. Functional &amp; Non-Functional Requirements</strong></h3><p><br></p><p>Functional Requirements:</p><ul><li>Track raw materials and finished product stock levels</li><li>Create and manage production orders</li><li>Generate purchase and sales invoices</li><li>Real-time alerts via Telegram bot</li><li>Role-based access control (admin, manager, staff)</li><li>Export reports in Excel/PDF format</li><li>Generate analytics dashboards for decision-making</li><li><br></li></ul><p>Non-Functional Requirements:</p><ul><li>Khmer language support throughout the system</li><li>Accessible on multiple devices (desktop, mobile, tablet)</li><li>Secure login with JWT and Google OAuth2</li><li>High system performance with optimized database queries</li><li>Reliable backup and recovery mechanisms</li></ul><p><br></p><h3><strong>6. Tools &amp; Technologies</strong></h3><p><br></p><ul><li><strong>Frontend</strong>: React.js, TailwindCSS, React Icons</li><li><strong>Backend</strong>: Laravel (PHP), MySQL, Laravel Excel</li><li><strong>Authentication</strong>: JWT, Google OAuth2, Role-based Access Control (RBAC)</li><li><strong>APIs</strong>: RESTful APIs, Google Maps API</li><li><strong>Dev Tools</strong>: Git, Postman, CI/CD pipelines</li><li><strong>Server Environment</strong>: Linux (Ubuntu-based) VPS</li></ul><p><br></p><h3><strong>7. Activities &amp; Milestones</strong></h3><p><br></p><ul><li>Requirements gathering and digital maturity assessment</li><li>System architecture and design finalization</li><li>UI/UX development and frontend implementation</li><li>Backend API development and database structuring</li><li>Integration with Telegram for real-time updates</li><li>Role-based access and user permissions setup</li><li>System testing (unit, integration, UAT)</li><li>On-site and virtual user training sessions</li><li>Deployment and system go-live</li><li>Post-deployment support and maintenance</li><li><br></li></ul><h3><strong>8. Perspective</strong></h3><p><br></p><p>This project reflects the power of <strong>digitally empowering local SMEs in Cambodia</strong> through custom solutions designed for their actual needs. By delivering a Khmer-localized, responsive, and intuitive inventory and production system, we’ve helped eliminate barriers caused by generic global software tools.</p><p>Beyond Toeuk Somrong, this platform is now positioned as a <strong>scalable solution</strong> that can be tailored for other Cambodian manufacturers and SMEs who face similar challenges. It demonstrates how thoughtful design, local language support, and smart automation (like Telegram alerts) can dramatically improve day-to-day business operations.</p><p>This case proves that <strong>digital transformation for SMEs doesn't have to be complex—it just needs to be relevant, accessible, and purposeful.</strong></p>`
+        ,
+        tags: ["React", "Laravel", "Freelance Project", "SMEs", "GIZ-ICONE"],
+        images: [
+            "/projects/inventory/inventory-thumbnail.png",
+            "/projects/inventory/inventory-1.png",
+            "/projects/inventory/inventory-2.png",
+            "/projects/inventory/inventory-3.png",
+            "/projects/inventory/inventory-4.png",
+            "/projects/inventory/inventory-5.png",
+            "/projects/inventory/inventory-6.png",
+            "/projects/inventory/inventory-7.png",
+            "/projects/inventory/inventory-8.png",
+            "/projects/inventory/inventory-9.png",
+            "/projects/inventory/inventory-10.png",
+            "/projects/inventory/inventory-11.png",
+            "/projects/inventory/inventory-12.png",
+            "/projects/inventory/inventory-13.png",
+            "/projects/inventory/inventory-14.png"
+        ],
+        githubRepo: [
+            {
+                title: "N/A",
+                link: "N/A"
+            }
+        ]
+    },
 ];
