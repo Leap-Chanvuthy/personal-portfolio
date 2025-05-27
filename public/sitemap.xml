@@ -3,17 +3,32 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://yourdomain.com/</loc>
+    <loc>https://leapchanvuthy.vercel.app/</loc>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/blog</loc>
+    <loc>https://leapchanvuthy.vercel.app/about</loc>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/contact</loc>
+    <loc>https://leapchanvuthy.vercel.app/services</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://leapchanvuthy.vercel.app/projects</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://leapchanvuthy.vercel.app/blogs</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://leapchanvuthy.vercel.app/components</loc>
     <priority>0.5</priority>
   </url>
 
