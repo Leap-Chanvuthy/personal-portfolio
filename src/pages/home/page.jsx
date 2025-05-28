@@ -1,31 +1,3 @@
-// import Hero from "./_components/hero";
-// import Metatag from "../../components/resusable/meta-tag";
-// import { useTranslation } from "react-i18next";
-// import RecentPost from "./_components/recent-post";
-// import FeaturedWorks from "./_components/featured-works";
-// import { motion } from "framer-motion";
-
-// const Home = () =>{
-
-//     const {t} = useTranslation('meta');
-
-//     return (
-//         <motion.div
-//         initial={{ opacity: 0 }}
-//         animate={{ opacity: 1 }}
-//         transition={{ duration: 0.5 }}
-//         >
-//             <Metatag title={t('home.title')} description={t('home.description')} />
-//             <Hero />
-//             <RecentPost />
-//             <FeaturedWorks />
-//         </motion.div>
-//     )
-// }
-
-// export default Home;
-
-
 import Hero from "./_components/hero";
 import Metatag from "../../components/resusable/meta-tag";
 import { useTranslation } from "react-i18next";

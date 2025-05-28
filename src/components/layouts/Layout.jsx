@@ -22,23 +22,25 @@
 
 import BackgroundMusic from "../resusable/background-music";
 import BuyMeCoffee from "../resusable/buy-me-coffee";
+import ScrollProgressBar from "../resusable/scroll-progress-bar";
 import Footer from "./Footer";
 import NavBar from "./Navbar";
 
 const Layout = ({ children }) => {
     return (
-        <div className="max-w-6xl mx-auto">
+        <div>
             <header>
                 <NavBar />
             </header>
-            <main className="max-w-6xl mx-auto">
+            <main className="max-w-6xl mx-auto pt-20">
+                <ScrollProgressBar />
                 {children || <div>No content available</div>}
             </main>
-            <div>
+            <div className="max-w-6xl mx-auto">
                 <BackgroundMusic />
                 <BuyMeCoffee />
             </div>
-            <footer className="max-w-5xl mx-auto px-5">
+            <footer className="max-w-6xl mx-auto px-5">
                 <Footer />
             </footer>
         </div>

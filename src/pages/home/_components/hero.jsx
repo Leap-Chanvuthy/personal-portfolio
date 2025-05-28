@@ -8,7 +8,7 @@ const Hero = () => {
     const { t, i18n } = useTranslation('home');
 
     return (
-        <div className={`flex flex-col-reverse md:flex-row mx-10 lg:md:mx-auto justify-between items-center gap-10 ${i18n.language == "km" ? "font-kh" : ""}`}>
+        <div className={`flex flex-col md:flex-row mx-10 lg:md:mx-auto justify-between items-center gap-10 ${i18n.language == "km" ? "font-kh" : ""}`}>
             <div>
             <h1 className={`text-4xl lg:md:text-5xl font-bold mb-10 leading-snug sm:leading-tight`}>
   {t('hero.title')}
