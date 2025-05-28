@@ -9,6 +9,7 @@ import enHome from "./src/locales/en/home.json";
 import enMeta from "./src/locales/en/meta-tag.json";
 import enAbout from "./src/locales/en/about.json";
 import enProject from "./src/locales/en/project.json";
+import enService from "./src/locales/en/service.json";
 
 
 // Khmer translations
@@ -18,6 +19,7 @@ import kmHome from "./src/locales/km/home.json";
 import kmMeta from "./src/locales/km/meta-tag.json";
 import kmAbout from "./src/locales/km/about.json";
 import kmProject from "./src/locales/km/project.json";
+import kmService from "./src/locales/km/service.json";
 
 
 
@@ -35,6 +37,7 @@ i18n
         meta : enMeta,
         about : enAbout,
         project : enProject,
+        service : enService,
       },
       km: {
         global : kmGlobal,
@@ -43,6 +46,7 @@ i18n
         meta : kmMeta,
         about : kmAbout,
         project : kmProject,
+        service : kmService,
       },
     },
     fallbackLng: 'en',

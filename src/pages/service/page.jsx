@@ -1,9 +1,10 @@
+import WhyWorkingWithMe from "./_components/why-working-with-me";
 
 
 const Service = () => {
     return (
-        <div>
-            This is a service page
+        <div className="my-28">
+            <WhyWorkingWithMe />
         </div>
     )
 }

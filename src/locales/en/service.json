@@ -1,0 +1,28 @@
+{
+    "hero" : {
+        "title" : "Why you should working with me?",
+        "subtitle" : "I offer a hands-on, client-focused web development service — from frontend design to backend logic — making me your one-stop solution for building responsive websites, web apps, and management systems. With strong problem-solving skills, adaptability, and a full-stack approach, I bring reliability, flexibility, and modern tech expertise to every project.",
+        "cards" : {
+            "card1" : {
+                "title" : "Problem-Solving Mindset",
+                "img" : "/images/why-choose-me/problem-solving.svg" ,
+                "body" : "I've learned web development by doing real projects, solving real problems. This helps me think practically and work efficiently under pressure."
+            },
+            "card2" : {
+                "title" : "Full-Stack Development Skills",
+                "img" : "/images/why-choose-me/fullstack-development.svg",
+                "body" : "From designing frontend interfaces with React & React Native to building scalable backends with Node.js, Laravel , Express, MongoDB or MySQL — I can handle the full development cycle."
+            },
+            "card3" : {
+                "title" : "Fast Learner & Adaptable",
+                "img" : "/images/why-choose-me/fast-learner.svg",
+                "body" : "Whether it's a new framework, an unexpected challenge, or switching tasks quickly, I’m always ready to learn and adapt. I can grow with your project."
+            },
+            "card4" : {
+                "title" : "Reliable, Trustworthy & Easy to Work With",
+                "img" : "/images/why-choose-me/reliable-trust.svg",
+                "body" : "I communicate clearly, deliver on time, and value long-term collaboration. My goal is not just to finish a project but to make sure it succeeds."
+            }
+        }
+    }
+}

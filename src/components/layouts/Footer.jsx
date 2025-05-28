@@ -3,6 +3,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { IoMail } from "react-icons/io5";
 
 
 
@@ -24,6 +25,9 @@ const Footer = () => {
                 </Link>
                 <Link to="https://www.linkedin.com/in/leap-chanvuthy-9402b8282/" target="_blank">
                     <FaLinkedin className="text-2xl" />
+                </Link>
+                <Link to="mailto:leapchanvuthy@gmail.com" target="_blank">
+                    <IoMail className="text-2xl" />
                 </Link>
             </div>
             <div className='flex flex-col justify-center items-center gap-2'>
