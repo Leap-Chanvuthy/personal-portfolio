@@ -137,7 +137,7 @@ const NavBar = () => {
         </Link>
 
         {/* Desktop nav */}
-        <nav className={`hidden md:flex gap-6 font-bold ${i18n.language === 'km' ? 'font-kh' : ''}`}>
+        <nav className={`hidden md:flex items-center gap-6 font-bold ${i18n.language === 'km' ? 'font-kh' : ''}`}>
           {navLinks.map((navLink, index) => (
             <motion.div
               key={index}

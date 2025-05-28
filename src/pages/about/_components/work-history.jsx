@@ -55,7 +55,7 @@ const WorkHistory = () => {
                 <div className="my-10 mx-10 lg:md:mx-0">
                     <h2 className="font-bold text-2xl my-5">{t('work.title')}</h2>
                     <Timeline>
-                        {kmWorks && kmWorks.map((edu) => (
+                        {kmWorks && kmWorks.map((edu , index) => (
                             <motion.div
                                 variants={fadeInUp}
                                 initial="hidden"
@@ -63,7 +63,7 @@ const WorkHistory = () => {
                                 viewport={{ once: true, amount: 0.3 }}
                                 transition={{ duration: 0.6 }}
                             >
-                                <TimelineItem>
+                                <TimelineItem key={index}>
                                     <TimelinePoint />
                                     <TimelineContent>
                                         <TimelineTime>{edu.date}</TimelineTime>

@@ -22,8 +22,8 @@ const WorkCard = ({id , image , title , badges , subtitle , body}) =>{
                 <div className="flex flex-col gap-2 mt-3">
                     <h2 className="font-bold">{title}</h2>
                     <div className="flex flex-wrap lg:md:flex-row items-center gap-3">
-                        {badges && badges.map((badge) =>(
-                            <div className="flex flex-wrap gap-2">
+                        {badges && badges.map((badge , index) =>(
+                            <div className="flex flex-wrap gap-2" key={index}>
                                 <Badge color="gray">{badge}</Badge>
                             </div>
                         ))}

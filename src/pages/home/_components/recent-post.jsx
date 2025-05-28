@@ -28,7 +28,7 @@ const RecentPost = () => {
                     </div>
                     <div>
                         {blogs.slice(-3).map((blog) => (
-                            <Link to={`/blog/${blog.id}`}>
+                            <Link to={`/blog/${blog.id}`} key={blog.id}>
                                 <motion.div
                                     variants={fadeInUp}
                                     initial="hidden"

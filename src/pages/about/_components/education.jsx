@@ -30,7 +30,7 @@ const Education = () => {
                 <div className="my-10 mx-10 lg:md:mx-0">
                     <h2 className="font-bold text-2xl my-5">{t('education.title')}</h2>
                     <Timeline>
-                        {enEducations && enEducations.map((edu) => (
+                        {enEducations && enEducations.map((edu , index) => (
                             <motion.div
                                 variants={fadeInUp}
                                 initial="hidden"
@@ -38,7 +38,7 @@ const Education = () => {
                                 viewport={{ once: true, amount: 0.3 }}
                                 transition={{ duration: 0.6 }}
                             >
-                                <TimelineItem>
+                                <TimelineItem key={index}>
                                     <TimelinePoint />
                                     <TimelineContent>
                                         <TimelineTime>{edu.date}</TimelineTime>
@@ -56,7 +56,7 @@ const Education = () => {
                 <div className="my-10 mx-10 lg:md:mx-0">
                     <h2 className="font-bold text-2xl my-5">{t('education.title')}</h2>
                     <Timeline>
-                        {kMeducations && kMeducations.map((edu) => (
+                        {kMeducations && kMeducations.map((edu , index) => (
                             <motion.div
                                 variants={fadeInUp}
                                 initial="hidden"
@@ -64,7 +64,7 @@ const Education = () => {
                                 viewport={{ once: true, amount: 0.3 }}
                                 transition={{ duration: 0.6 }}
                             >
-                                <TimelineItem>
+                                <TimelineItem key={index}>
                                     <TimelinePoint />
                                     <TimelineContent>
                                         <TimelineTime>{edu.date}</TimelineTime>
