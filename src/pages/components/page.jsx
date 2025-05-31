@@ -11,6 +11,7 @@ import WorkCard from "../../components/resusable/work-card";
 import QuillDashboard from "../../components/resusable/quill-dashboard";
 import SpinnerPage from "../../components/resusable/spinner-page";
 import MindsetCard from "../../components/resusable/mindset-card";
+import TechStacks from "../../components/resusable/techstacks";
 
 
 const Components = () =>{
@@ -30,7 +31,10 @@ const Components = () =>{
 
             <div className="my-10">
                 <MindsetCard />
+            </div>
 
+            <div className="my-10">
+                <TechStacks />
             </div>
 
             {/* <SpinnerPage /> */}
