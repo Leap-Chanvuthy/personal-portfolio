@@ -5,6 +5,7 @@ import Quote from "./_components/quote";
 import Education from "./_components/education";
 import WorkHistory from "./_components/work-history";
 import { motion } from "framer-motion";
+import CertificateCard from "./_components/certificate-card";
 
 const fadeInUp = {
     hidden: { opacity: 0, y: 30 },
@@ -38,6 +39,16 @@ const About = () => {
                 transition={{ duration: 0.6 }}
             >
                 <Quote />            
+            </motion.div>
+
+            <motion.div
+                variants={fadeInUp}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.6 }}
+            >
+                <CertificateCard />
             </motion.div>
 
             <motion.div

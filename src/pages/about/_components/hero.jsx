@@ -34,7 +34,7 @@ const Hero = () => {
                     repeat={Infinity}
                 />
                 <p className="max-w-[497px] my-10">{t('hero.subtitle')}</p>
-                <a>
+                <a href="#certificates">
                     <SecondaryBtnOutlined text={t('hero.getToKnow')} />
                 </a>
             </div>
