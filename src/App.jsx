@@ -36,12 +36,12 @@
 // export default App
 
 
-import { React, Suspense, lazy } from 'react';
+import { Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/layouts/Layout';
 import SpinnerPage from './components/resusable/spinner-page';
 
-// Lazy load your pages
+// Lazy load pages
 const Home = lazy(() => import('./pages/home/page'));
 const Components = lazy(() => import('./pages/components/page'));
 const Blog = lazy(() => import('./pages/blog/page'));
