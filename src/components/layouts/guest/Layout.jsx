@@ -1,7 +1,7 @@
-import BackgroundMusic from "../resusable/background-music";
-import BuyMeCoffee from "../resusable/buy-me-coffee";
-import Cookie from "../resusable/cookie";
-import ScrollProgressBar from "../resusable/scroll-progress-bar";
+import BackgroundMusic from "../../resusable/background-music";
+import BuyMeCoffee from "../../resusable/buy-me-coffee";
+import Cookie from "../../resusable/cookie";
+import ScrollProgressBar from "../../resusable/scroll-progress-bar";
 import Footer from "./Footer";
 import NavBar from "./Navbar";
 

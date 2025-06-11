@@ -38,7 +38,7 @@
 
 import { Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Layout from './components/layouts/Layout';
+import Layout from './components/layouts/guest/Layout';
 import SpinnerPage from './components/resusable/spinner-page';
 import NotFound from './components/resusable/not-found';
 

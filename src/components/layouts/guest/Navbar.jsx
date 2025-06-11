@@ -3,8 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiMenu, HiX } from 'react-icons/hi';
-import LanguageSelector from '../resusable/language-selector';
-import ToggleTheme from '../resusable/toggle-theme';
+import LanguageSelector from '../../resusable/language-selector';
+import ToggleTheme from '../../resusable/toggle-theme';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
