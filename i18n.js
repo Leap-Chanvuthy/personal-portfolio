@@ -22,6 +22,13 @@ import kmProject from "./src/locales/km/project.json";
 import kmService from "./src/locales/km/service.json";
 
 
+// Admin english translations
+import enSidebar from "./src/locales/en/sidebar.json";
+
+//Admin khmer translations
+import kmSidebar from "./src/locales/km/sidebar.json";
+
+
 
 
 
@@ -31,6 +38,7 @@ i18n
   .init({
     resources: {
       en: {
+        // guest
         global : enGlobal,
         navbar: enNavbar,
         home : enHome,
@@ -38,8 +46,11 @@ i18n
         about : enAbout,
         project : enProject,
         service : enService,
+        // admin
+        sidebar : enSidebar,
       },
       km: {
+        // guest
         global : kmGlobal,
         navbar: kmNavbar,
         home : kmHome,
@@ -47,6 +58,8 @@ i18n
         about : kmAbout,
         project : kmProject,
         service : kmService,
+        // admin 
+        sidebar : kmSidebar,
       },
     },
     fallbackLng: 'en',
