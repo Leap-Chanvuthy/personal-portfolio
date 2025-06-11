@@ -43,7 +43,7 @@ const AdminSidebar = ({ isOpen, setIsOpen }) => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`flex items-center gap-2 ${path == link.path ? 'bg-gray-200' : ''}  p-2 rounded-lg`}
+                className={`flex items-center gap-2 ${path == link.path ? 'bg-gray-100' : ''}  p-2 rounded-lg`}
               >
                 <Icon />
                 <p className="font-semibold">{link.label}</p>

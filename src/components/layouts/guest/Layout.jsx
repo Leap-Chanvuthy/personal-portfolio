@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import BackgroundMusic from "../../resusable/background-music";
 import BuyMeCoffee from "../../resusable/buy-me-coffee";
 import Cookie from "../../resusable/cookie";
@@ -5,7 +6,7 @@ import ScrollProgressBar from "../../resusable/scroll-progress-bar";
 import Footer from "./Footer";
 import NavBar from "./Navbar";
 
-const Layout = ({ children }) => {
+const Layout = () => {
     return (
         <div>
             <header>
@@ -13,7 +14,7 @@ const Layout = ({ children }) => {
             </header>
             <main className="max-w-6xl mx-auto pt-20">
                 <ScrollProgressBar />
-                {children || <div>No content available</div>}
+                <Outlet />
             </main>
             <div className="max-w-6xl mx-auto">
                 <BackgroundMusic />

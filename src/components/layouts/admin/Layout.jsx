@@ -1,8 +1,9 @@
 import { useState } from "react";
 import AdminHeader from "./header";
 import AdminSidebar from "./Sidebar";
+import { Outlet } from "react-router-dom";
 
-const AdminLayout = ({ children }) => {
+const AdminLayout = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
@@ -11,7 +12,7 @@ const AdminLayout = ({ children }) => {
       <div className="flex-1 flex flex-col">
         <AdminHeader setIsSidebarOpen={setIsSidebarOpen} />
         <main className="flex-1 overflow-y-auto p-4 bg-gray-50 dark:bg-gray-900">
-          {children}
+          <Outlet />
         </main>
       </div>
     </div>
