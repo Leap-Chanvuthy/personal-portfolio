@@ -40,6 +40,7 @@ import { Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/layouts/Layout';
 import SpinnerPage from './components/resusable/spinner-page';
+import NotFound from './components/resusable/not-found';
 
 // Lazy load pages
 const Home = lazy(() => import('./pages/home/page'));
@@ -57,6 +58,7 @@ function App() {
       <Layout>
         <Suspense fallback={<SpinnerPage />}>
           <Routes>
+            <Route path='*' element={<NotFound />} />
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/blogs' element={<Blog />} />
