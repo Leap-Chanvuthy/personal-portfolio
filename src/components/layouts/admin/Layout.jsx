@@ -11,7 +11,7 @@ const AdminLayout = () => {
       <AdminSidebar isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />
       <div className="flex-1 flex flex-col">
         <AdminHeader setIsSidebarOpen={setIsSidebarOpen} />
-        <main className="flex-1 overflow-y-auto p-4 bg-gray-50 dark:bg-gray-900">
+        <main className="flex-1 overflow-y-auto px-5 lg:md:px-10 bg-gray-50 dark:bg-gray-900">
           <Outlet />
         </main>
       </div>

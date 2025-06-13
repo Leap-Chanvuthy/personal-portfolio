@@ -54,6 +54,7 @@ import GuestLayout from './components/layouts/guest/Layout';
 import AdminLayout from './components/layouts/admin/Layout';
 import SpinnerPage from './components/resusable/spinner-page';
 import NotFound from './components/resusable/not-found';
+import Media from './pages/(admin)/media/page';
 
 // Lazy load pages
 const Home = lazy(() => import('./pages/home/page'));
@@ -85,6 +86,7 @@ function App() {
           {/* Admin routes */}
           <Route element={<AdminLayout />}>
             <Route path="/admin/dashboard" element={<div>Admin Dashboard</div>} />
+            <Route path="/admin/media" element={<Media/>} />
           </Route>
 
           <Route path="*" element={<NotFound />} />

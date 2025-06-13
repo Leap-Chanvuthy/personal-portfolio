@@ -27,7 +27,7 @@ const AdminSidebar = ({ isOpen, setIsOpen }) => {
       />
 
       <aside
-        className={`fixed z-40 md:static top-0 left-0 h-full w-64 bg-white dark:bg-gray-900 shadow-md transform transition-transform duration-300 ease-in-out
+        className={`fixed z-40 md:static top-0 left-0 h-full w-64 bg-white dark:bg-gray-900 shadow-sm transform transition-transform duration-300 ease-in-out
         ${isOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"}`}
       >
         <div className="md:hidden flex justify-end p-4">
