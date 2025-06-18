@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
 import Partial from "../../../components/layouts/admin/partial";
 import GlobalTable from "../../../components/resusable/table";
+import { Button } from "flowbite-react";
 
 const userColumns = [
   { header: "Name", accessor: "name" },
@@ -51,9 +53,14 @@ const Media = () =>{
     return (
         <div>
             <Partial page="Media" section="Home" link="/admin/media" />
+            <Link to="/admin/media/create" className="btn btn-primary mb-4">
+                <Button>Create Media</Button>
+            </Link>
             <div className="mt-5">
                 <GlobalTable columns={userColumns} data={userData} />
             </div>
+          
+
         </div>
     )
 }

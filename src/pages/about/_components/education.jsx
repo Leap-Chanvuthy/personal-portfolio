@@ -43,9 +43,9 @@ const Education = () => {
                                     <TimelineContent>
                                         <TimelineTime>{edu.date}</TimelineTime>
                                         <TimelineTitle>{edu.title}</TimelineTitle>
-                                        <TimelineBody>
+                                        {/* <TimelineBody>
                                             {edu.subtitle}
-                                        </TimelineBody>
+                                        </TimelineBody> */}
                                     </TimelineContent>
                                 </TimelineItem>
                             </motion.div>
@@ -69,9 +69,9 @@ const Education = () => {
                                     <TimelineContent>
                                         <TimelineTime>{edu.date}</TimelineTime>
                                         <TimelineTitle>{edu.title}</TimelineTitle>
-                                        <TimelineBody>
+                                        {/* <TimelineBody>
                                             {edu.subtitle}
-                                        </TimelineBody>
+                                        </TimelineBody> */}
                                     </TimelineContent>
                                 </TimelineItem>
                             </motion.div>

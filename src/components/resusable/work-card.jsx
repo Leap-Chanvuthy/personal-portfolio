@@ -18,7 +18,7 @@ const WorkCard = ({id , image , title , badges , subtitle , body}) =>{
     return (
         <div>
             <div className="flex flex-col lg:md:flex-row gap-5 items-start">
-                <img src={image} alt="work" className="w-full lg:md:w-64 h-40 object-cover rounded-lg" />
+                <img src={image} alt={image} className="w-full lg:md:w-80 h-40 object-cover rounded-lg" />
                 <div className="flex flex-col gap-2 mt-3">
                     <h2 className="font-bold">{title}</h2>
                     <div className="flex flex-wrap lg:md:flex-row items-center gap-3">

@@ -17,7 +17,7 @@ const KmProejctDetail = ({project}) => {
                     ))}
                 </div>
             </div>
-            <img className="w-full lg:md:h-[35rem] object-cover rounded-lg" src={project.images[0]} />
+            <img className="w-full lg:md:h-[35rem] object-cover rounded-lg" src={project.images[0]} alt={project.images[0]}  />
             <div>
                 <h3>Github Repositories</h3>
                 <div className="flex flex-col gap-3 mt-5">
@@ -31,9 +31,9 @@ const KmProejctDetail = ({project}) => {
             </div>
             <div dangerouslySetInnerHTML={{ __html: project.body }} />
             <h3 className="font-bold">Some images</h3>
-            <div className="grid bg-gray-100n dark:bg-gray-800 p-5 grid-cols-1 lg:md:grid-cols-2 gap-5">
+            <div className="grid bg-gray-100n dark:bg-gray-800 grid-cols-1 lg:md:grid-cols-2 gap-5">
                 {project.images && project.images.map((img) => (
-                    <img className="w-full lg:md:h-[20rem] object-cover rounded-lg" src={img} />
+                    <img className="w-full lg:md:h-[20rem] object-cover rounded-lg" src={img} alt={img} />
                 ))}
             </div>
         </div>
