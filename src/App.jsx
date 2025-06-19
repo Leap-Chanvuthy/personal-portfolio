@@ -55,7 +55,7 @@ import AdminLayout from './components/layouts/admin/Layout';
 import SpinnerPage from './components/resusable/spinner-page';
 import NotFound from './components/resusable/not-found';
 import './configs/firebase/firebase';
-import usePageTracking from './hooks/usePageTracking';
+import PageTracker from './components/resusable/page-tracker';
 import Media from './pages/(admin)/media/page';
 
 // Lazy load pages
@@ -70,10 +70,10 @@ const ProjectDetail = lazy(() => import('./pages/project/[id]/page'));
 
 function App() {
 
-  usePageTracking();
   
   return (
     <BrowserRouter>
+      <PageTracker />
       <Suspense fallback={<SpinnerPage />}>
         <Routes>
           {/* Guest routes */}
