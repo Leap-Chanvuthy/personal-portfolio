@@ -6,7 +6,7 @@ import ScrollProgressBar from "../../resusable/scroll-progress-bar";
 import Footer from "./Footer";
 import NavBar from "./Navbar";
 
-const Layout = () => {
+const Layout = ({children}) => {
     return (
         <div>
             <header>
@@ -14,7 +14,7 @@ const Layout = () => {
             </header>
             <main className="max-w-6xl mx-auto pt-20">
                 <ScrollProgressBar />
-                <Outlet />
+                {children}
             </main>
             <div className="max-w-6xl mx-auto">
                 <BackgroundMusic />
