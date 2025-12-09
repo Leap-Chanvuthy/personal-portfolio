@@ -13,7 +13,7 @@ const fadeInTop = {
 };
 
 const WhyWorkingWithMe = () => {
-    const { t } = useTranslation("service");
+    const { t , i18n } = useTranslation("service");
 
     const mindsets = [
         {
@@ -43,7 +43,7 @@ const WhyWorkingWithMe = () => {
     ];
 
     return (
-        <div className="mx-10 lg:md:mx-auto">
+        <div className={`${i18n.language == 'km' ? 'font-kh' : ''} mx-10 lg:md:mx-auto`}>
             <motion.div
                 variants={fadeInLeft}
                 initial="hidden"

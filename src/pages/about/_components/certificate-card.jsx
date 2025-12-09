@@ -24,9 +24,9 @@ const fadeInLeft = {
             height: 800,            
         },
         {
-            title: "I4D 2.0 Internship by GIZ Cambodia",
-            body: "After successfully finished this internship, I get a certificate of internship that is signed and approved by CADT and GIZ Cambodia for comtributed I4D program (Innovation for Development) that help Banana Center Cambodia digitalized their company.",
-            image: "/images/certificates/internship-giz.jpeg",
+            title: "React Native From Beginner to Expert by Udemy 2025",
+            body: "Completed a comprehensive React Native course on Udemy, mastering mobile app development from basics to advanced concepts. Gained hands-on experience in building cross-platform applications, utilizing React Native components, navigation, state management, and integrating APIs. Developed skills in debugging, performance optimization, and deploying apps to app stores, preparing me for real-world mobile development projects.",
+            image: "/images/certificates/udemy-react-native-certificate.jpg",
             width: 1200,
             height: 800,
         },
@@ -107,7 +107,7 @@ const Card = ({ title, body, src, reverse }) => {
                 <h4 className="font-semibold text-lg mb-2 text-center md:text-left">
                     {title}
                 </h4>
-                <p className="text-gray-700 dark:text-gray-300 text-center md:text-left">
+                <p className="text-gray-700 text-justify dark:text-gray-300 md:text-left">
                     {body}
                 </p>
             </div>

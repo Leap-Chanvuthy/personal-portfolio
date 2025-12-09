@@ -53,7 +53,7 @@ const Education = () => {
                     </Timeline>
                 </div>
                 :
-                <div className="my-10 mx-10 lg:md:mx-0">
+                <div className="my-10 mx-10 lg:md:mx-0 font-kh">
                     <h2 className="font-bold text-2xl my-5">{t('education.title')}</h2>
                     <Timeline>
                         {kMeducations && kMeducations.map((edu , index) => (

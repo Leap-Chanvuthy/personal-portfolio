@@ -52,7 +52,7 @@ const WorkHistory = () => {
                     </Timeline>
                 </div>
                 :
-                <div className="my-10 mx-10 lg:md:mx-0">
+                <div className="my-10 mx-10 lg:md:mx-0 font-kh">
                     <h2 className="font-bold text-2xl my-5">{t('work.title')}</h2>
                     <Timeline>
                         {kmWorks && kmWorks.map((edu , index) => (
