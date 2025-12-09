@@ -9,7 +9,7 @@ const Service = () => {
             {/* <AllServices /> */}
             {/* <TechStacks /> */}
         </div>
-    )
+    ) 
 }
 
 export default Service;
