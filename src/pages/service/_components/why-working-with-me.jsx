@@ -43,7 +43,7 @@ const WhyWorkingWithMe = () => {
     ];
 
     return (
-        <div className={`${i18n.language == 'km' ? 'font-kh' : ''} mx-10 lg:md:mx-auto`}>
+        <section className={`${i18n.language == 'km' ? 'font-kh' : ''} mx-10 lg:md:mx-auto`}>
             <motion.div
                 variants={fadeInLeft}
                 initial="hidden"
@@ -79,7 +79,7 @@ const WhyWorkingWithMe = () => {
                     </motion.div>
                 ))}
             </div>
-        </div>
+        </section>
     );
 };
 

@@ -6,7 +6,7 @@ const Service = () => {
     return (
         <div className="flex flex-col gap-10 my-28">
             <WhyWorkingWithMe />
-            {/* <AllServices /> */}
+            <AllServices />
             {/* <TechStacks /> */}
         </div>
     ) 
