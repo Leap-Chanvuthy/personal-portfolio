@@ -17,7 +17,7 @@ const AllProjects = () => {
     const { t , i18n } = useTranslation("project")
 
     return (
-        <div className="my-10 mx-10 lg:md:mx-auto">
+        <div className="mt-24 mb-10 mx-10 lg:md:mx-auto">
             <div className="flex justify-between my-5">
                 <h3 className="text-lg font-bold">{t('allProjects.title')}</h3>
                 <Link to="/projects">

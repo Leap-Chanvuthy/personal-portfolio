@@ -20,7 +20,7 @@ const ProjectDetail = () => {
 
 
     return (
-        <div className="mx-5 lg:md:mx-auto">
+        <div className="mx-5 mt-24 lg:md:mx-auto">
             {i18n.language == "en" ?
                 <Metatag title={`${enProject.title} | Leap Chanvuthy`} description={enProject.subtitle} />
                 :

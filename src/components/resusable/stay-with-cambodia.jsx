@@ -20,11 +20,11 @@ export default function StayWithCambodia() {
           <h2 className="text-base sm:text-lg md:text-xl font-bold text-white tracking-wide drop-shadow-md leading-tight">
             Stand with Cambodia ✊
             <span className="hidden md:inline mx-2 text-white/60">|</span>
-            <span className="block md:inline">justice & Peace for Cambodia Now 🇰🇭</span>
+            <span className="block md:inline">Justice & Peace for Cambodia Now 🇰🇭</span>
           </h2>
 
           <p className="text-[11px] sm:text-xs md:text-sm text-gray-200 font-medium max-w-3xl mx-auto md:mx-0 leading-snug">
-            End the aggression. Respect Cambodia’s sovereignty. Stop the war. <span className="font-bold underline">Thailand open fire!</span>
+            End the aggression. Respect Cambodia’s sovereignty. Stop the war. <span className="font-bold underline">#ThailandOpenFire!</span>
           </p>
         </div>
 
