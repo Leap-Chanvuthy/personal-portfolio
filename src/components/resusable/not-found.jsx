@@ -3,11 +3,11 @@ import { useTranslation } from "react-i18next";
 
 const NotFound = () => {
 
-  const {t} = useTranslation('global'); 
+  const {t , i18n} = useTranslation('global'); 
 
   return (
     <>
-      <main className="grid min-h-full place-items-center px-6 py-24 sm:py-32 lg:px-8">
+      <main className={`grid min-h-full place-items-center px-6 py-24 sm:py-32 lg:px-8 ${i18n.language == "km" ? "font-kh" : ""}`}>
         <div className="text-center">
           <p className="text-base font-semibold text-primary">
             {t('notFound.404')}
