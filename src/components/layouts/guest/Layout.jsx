@@ -12,7 +12,7 @@ const Layout = ({children}) => {
         <div>
             <header>
                 <NavBar />
-                <StayWithCambodia />
+                {/* <StayWithCambodia /> */}
             </header>
             <main className="max-w-6xl mx-auto pt-20">
                 <ScrollProgressBar />
