@@ -28,6 +28,7 @@ const NavBar = () => {
     { path: '/projects', label: t('project') },
     { path: '/blogs', label: t('blog') },
     { path: '/services', label: t('service') },
+    { path: '/contact', label: t('contact') },
   ];
 
   return (
